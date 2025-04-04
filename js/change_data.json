@@ -4,851 +4,840 @@
     "type": "변신",
     "influence": "결의",
     "name": "극진 12지신:원숭이",
-    "ic": 163,
+    "ic": 1,
     "피해저항": 73,
     "피해저항관통": 35,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/163.png"
+    "iconPath": "/assets/icon/change/1.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 12지신:소",
-    "ic": 164,
+    "ic": 2,
     "피해저항": 0,
     "피해저항관통": 76,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/164.png"
+    "iconPath": "/assets/icon/change/2.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 12지신:닭",
-    "ic": 165,
+    "ic": 3,
     "피해저항": 67,
     "피해저항관통": 35,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/165.png"
-  },
-  {
-    "grade": "전설",
-    "type": "변신",
-    "influence": "결의",
-    "name": "극진 12지신:토끼",
-    "ic": 170,
-    "피해저항": 0,
-    "피해저항관통": 76,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/170.png"
-  },
-  {
-    "grade": "전설",
-    "type": "변신",
-    "influence": "결의",
-    "name": "극진 12지신:쥐",
-    "ic": 172,
-    "피해저항": 63,
-    "피해저항관통": 35,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/172.png"
+    "iconPath": "/assets/icon/change/3.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 12지신:개",
-    "ic": 166,
+    "ic": 4,
     "피해저항": 0,
     "피해저항관통": 76,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/166.png"
+    "iconPath": "/assets/icon/change/4.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 12지신:호랑이",
-    "ic": 167,
+    "ic": 5,
     "피해저항": 67,
     "피해저항관통": 35,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/167.png"
+    "iconPath": "/assets/icon/change/5.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 12지신:용",
-    "ic": 168,
+    "ic": 6,
     "피해저항": 0,
     "피해저항관통": 76,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/168.png"
+    "iconPath": "/assets/icon/change/6.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 적안백묘",
-    "ic": 169,
+    "ic": 7,
     "피해저항": 0,
     "피해저항관통": 87,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/169.png"
+    "iconPath": "/assets/icon/change/7.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "결의",
+    "name": "극진 12지신:토끼",
+    "ic": 8,
+    "피해저항": 0,
+    "피해저항관통": 76,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/8.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 적안백랑",
-    "ic": 171,
+    "ic": 9,
     "피해저항": 94,
     "피해저항관통": 69,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/171.png"
+    "iconPath": "/assets/icon/change/9.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "결의",
+    "name": "극진 12지신:쥐",
+    "ic": 10,
+    "피해저항": 63,
+    "피해저항관통": 35,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/10.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 녹림각록",
-    "ic": 173,
+    "ic": 11,
     "피해저항": 157,
     "피해저항관통": 56,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/173.png"
+    "iconPath": "/assets/icon/change/11.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 야행휴류",
-    "ic": 174,
+    "ic": 12,
     "피해저항": 0,
     "피해저항관통": 111,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/174.png"
+    "iconPath": "/assets/icon/change/12.png"
   },
+
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 공적초어",
-    "ic": 175,
+    "ic": 13,
     "피해저항": 122,
     "피해저항관통": 56,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/175.png"
+    "iconPath": "/assets/icon/change/13.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 적면귀홍",
-    "ic": 190,
+    "ic": 14,
     "피해저항": 0,
     "피해저항관통": 111,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/190.png"
+    "iconPath": "/assets/icon/change/14.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 뢰고력양",
-    "ic": 176,
+    "ic": 15,
     "피해저항": 0,
     "피해저항관통": 111,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/176.png"
+    "iconPath": "/assets/icon/change/15.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 제흑오계",
-    "ic": 177,
+    "ic": 16,
     "피해저항": 111,
     "피해저항관통": 56,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/177.png"
+    "iconPath": "/assets/icon/change/16.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 금희율서",
-    "ic": 178,
+    "ic": 17,
     "피해저항": 111,
     "피해저항관통": 56,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/178.png"
+    "iconPath": "/assets/icon/change/17.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 금희산달",
-    "ic": 179,
+    "ic": 18,
     "피해저항": 83,
     "피해저항관통": 67,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/179.png"
+    "iconPath": "/assets/icon/change/18.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 견각무소",
-    "ic": 180,
+    "ic": 19,
     "피해저항": 72,
     "피해저항관통": 69,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/180.png"
+    "iconPath": "/assets/icon/change/19.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 두각지축",
-    "ic": 181,
+    "ic": 20,
     "피해저항": 0,
     "피해저항관통": 111,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/181.png"
+    "iconPath": "/assets/icon/change/20.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 암독감갈",
-    "ic": 182,
+    "ic": 21,
     "피해저항": 89,
     "피해저항관통": 69,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/182.png"
+    "iconPath": "/assets/icon/change/21.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 혈귀감갈",
-    "ic": 183,
+    "ic": 22,
     "피해저항": 0,
     "피해저항관통": 111,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/183.png"
+    "iconPath": "/assets/icon/change/22.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 혈화적편",
-    "ic": 184,
+    "ic": 23,
     "피해저항": 128,
     "피해저항관통": 56,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/184.png"
+    "iconPath": "/assets/icon/change/23.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 묵시흑편",
-    "ic": 185,
+    "ic": 24,
     "피해저항": 97,
     "피해저항관통": 87,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/185.png"
+    "iconPath": "/assets/icon/change/24.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 염제표호",
-    "ic": 186,
+    "ic": 25,
     "피해저항": 132,
     "피해저항관통": 56,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/186.png"
+    "iconPath": "/assets/icon/change/25.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 무혈흑사",
-    "ic": 187,
+    "ic": 26,
     "피해저항": 94,
     "피해저항관통": 86,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/187.png"
+    "iconPath": "/assets/icon/change/26.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 요화범경",
-    "ic": 188,
+    "ic": 27,
     "피해저항": 84,
     "피해저항관통": 69,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/188.png"
+    "iconPath": "/assets/icon/change/27.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 적투갑충",
-    "ic": 189,
+    "ic": 28,
     "피해저항": 67,
     "피해저항관통": 66,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/189.png"
+    "iconPath": "/assets/icon/change/28.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 칠흑오요",
-    "ic": 374,
+    "ic": 29,
     "피해저항": 84,
     "피해저항관통": 86,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/374.png"
+    "iconPath": "/assets/icon/change/29.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 수인흑묘",
-    "ic": 383,
+    "ic": 30,
     "피해저항": 94,
     "피해저항관통": 66,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/383.png"
+    "iconPath": "/assets/icon/change/30.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 태극해치",
-    "ic": 392,
+    "ic": 31,
     "피해저항": 94,
     "피해저항관통": 69,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/392.png"
+    "iconPath": "/assets/icon/change/31.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 홍염미호",
-    "ic": 401,
+    "ic": 32,
     "피해저항": 130,
     "피해저항관통": 56,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/401.png"
+    "iconPath": "/assets/icon/change/32.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 백발귀호",
-    "ic": 410,
+    "ic": 33,
     "피해저항": 129,
     "피해저항관통": 55,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/410.png"
+    "iconPath": "/assets/icon/change/33.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 대익풍백",
-    "ic": 419,
+    "ic": 34,
     "피해저항": 131,
     "피해저항관통": 91,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/419.png"
+    "iconPath": "/assets/icon/change/34.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 해도영우",
-    "ic": 428,
+    "ic": 35,
     "피해저항": 94,
     "피해저항관통": 71,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/428.png"
-  },
-  {
-    "grade": "전설",
-    "type": "변신",
-    "influence": "침착",
-    "name": "길달",
-    "ic": 434,
-    "피해저항": 66,
-    "피해저항관통": 43,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/434.png"
+    "iconPath": "/assets/icon/change/35.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 무희천아",
-    "ic": 443,
+    "ic": 36,
     "피해저항": 113,
     "피해저항관통": 102,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/443.png"
+    "iconPath": "/assets/icon/change/36.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 칠흑곰인",
-    "ic": 452,
+    "ic": 37,
     "피해저항": 114,
     "피해저항관통": 106,
     "대인피해%": 5,
     "대인방어%": 0,
-    "iconPath": "/icons/452.png"
+    "iconPath": "/assets/icon/change/37.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 미토서화",
-    "ic": 458,
+    "ic": 38,
     "피해저항": 67,
     "피해저항관통": 136,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/458.png"
+    "iconPath": "/assets/icon/change/38.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 자안염사",
-    "ic": 467,
+    "ic": 39,
     "피해저항": 110,
     "피해저항관통": 103,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/467.png"
+    "iconPath": "/assets/icon/change/39.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 청월낭인",
-    "ic": 476,
+    "ic": 40,
     "피해저항": 59,
     "피해저항관통": 161,
     "대인피해%": 5,
     "대인방어%": 0,
-    "iconPath": "/icons/476.png"
+    "iconPath": "/assets/icon/change/40.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 녹림사심",
-    "ic": 489,
+    "ic": 41,
     "피해저항": 184,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/489.png"
+    "iconPath": "/assets/icon/change/41.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 세아봉왕",
-    "ic": 487,
+    "ic": 42,
     "피해저항": 184,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/487.png"
+    "iconPath": "/assets/icon/change/42.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 야행적홍",
-    "ic": 503,
+    "ic": 43,
     "피해저항": 55,
     "피해저항관통": 157,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/503.png"
+    "iconPath": "/assets/icon/change/43.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 적환주현",
-    "ic": 504,
+    "ic": 44,
     "피해저항": 157,
     "피해저항관통": 55,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/504.png"
+    "iconPath": "/assets/icon/change/44.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 풍운오계",
-    "ic": 518,
+    "ic": 45,
     "피해저항": 172,
     "피해저항관통": 69,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/518.png"
+    "iconPath": "/assets/icon/change/45.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 청포접아",
-    "ic": 519,
+    "ic": 46,
     "피해저항": 69,
     "피해저항관통": 172,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/519.png"
-  },
-  {
-    "grade": "전설",
-    "type": "변신",
-    "influence": "활력",
-    "name": "극진 사풍도갑",
-    "ic": 533,
-    "피해저항": 77,
-    "피해저항관통": 144,
-    "대인피해%": 0,
-    "대인방어%": 5,
-    "iconPath": "/icons/533.png"
+    "iconPath": "/assets/icon/change/46.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 자색백묘",
-    "ic": 534,
+    "ic": 47,
     "피해저항": 144,
     "피해저항관통": 77,
     "대인피해%": 0,
     "대인방어%": 5,
-    "iconPath": "/icons/534.png"
+    "iconPath": "/assets/icon/change/47.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "활력",
+    "name": "극진 사풍도갑",
+    "ic": 48,
+    "피해저항": 77,
+    "피해저항관통": 144,
+    "대인피해%": 0,
+    "대인방어%": 5,
+    "iconPath": "/assets/icon/change/48.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 유희수모",
-    "ic": 548,
+    "ic": 49,
     "피해저항": 66,
     "피해저항관통": 122,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/548.png"
+    "iconPath": "/assets/icon/change/49.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 명강율서",
-    "ic": 549,
+    "ic": 50,
     "피해저항": 122,
     "피해저항관통": 66,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/549.png"
+    "iconPath": "/assets/icon/change/50.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 지승우사",
-    "ic": 564,
+    "ic": 51,
     "피해저항": 78,
     "피해저항관통": 137,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/564.png"
+    "iconPath": "/assets/icon/change/51.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 적안흑랑",
-    "ic": 565,
+    "ic": 52,
     "피해저항": 137,
     "피해저항관통": 78,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/565.png"
+    "iconPath": "/assets/icon/change/52.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "결의",
     "name": "극진 자희산달",
-    "ic": 566,
+    "ic": 53,
     "피해저항": 53,
     "피해저항관통": 53,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/566.png"
+    "iconPath": "/assets/icon/change/53.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 지승운사",
-    "ic": 583,
+    "ic": 54,
     "피해저항": 72,
     "피해저항관통": 149,
     "대인피해%": 0,
     "대인방어%": 5,
-    "iconPath": "/icons/583.png"
+    "iconPath": "/assets/icon/change/54.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 극독자갈",
-    "ic": 584,
+    "ic": 55,
     "피해저항": 149,
     "피해저항관통": 72,
     "대인피해%": 0,
     "대인방어%": 5,
-    "iconPath": "/icons/584.png"
+    "iconPath": "/assets/icon/change/55.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 적운웅묘",
-    "ic": 598,
+    "ic": 56,
     "피해저항": 0,
     "피해저항관통": 149,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/598.png"
+    "iconPath": "/assets/icon/change/56.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "활력",
     "name": "극진 청귀백갈",
-    "ic": 599,
+    "ic": 57,
     "피해저항": 0,
     "피해저항관통": 149,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/599.png"
+    "iconPath": "/assets/icon/change/57.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 흑시응사",
-    "ic": 605,
+    "ic": 58,
     "피해저항": 0,
     "피해저항관통": 210,
     "대인피해%": 3,
     "대인방어%": 3,
-    "iconPath": "/icons/605.png"
+    "iconPath": "/assets/icon/change/58.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "고요",
     "name": "극진 혈독청편",
-    "ic": 606,
+    "ic": 59,
     "피해저항": 0,
     "피해저항관통": 210,
     "대인피해%": 3,
     "대인방어%": 3,
-    "iconPath": "/icons/606.png"
+    "iconPath": "/assets/icon/change/59.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 청령사록",
-    "ic": 607,
+    "ic": 60,
     "피해저항": 0,
     "피해저항관통": 197,
     "대인피해%": 0,
     "대인방어%": 6,
-    "iconPath": "/icons/607.png"
+    "iconPath": "/assets/icon/change/60.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "의지",
     "name": "극진 묵시홍편",
-    "ic": 608,
+    "ic": 61,
     "피해저항": 197,
     "피해저항관통": 0,
     "대인피해%": 6,
     "대인방어%": 0,
-    "iconPath": "/icons/608.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "변신",
-    "influence": "결의",
-    "name": "멸 화저폭군",
-    "ic": 609,
-    "피해저항": 136,
-    "피해저항관통": 136,
-    "대인피해%": 7,
-    "대인방어%": 7,
-    "iconPath": "/icons/609.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "변신",
-    "influence": "고요",
-    "name": "멸 마룡명신",
-    "ic": 610,
-    "피해저항": 106,
-    "피해저항관통": 221,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/610.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "변신",
-    "influence": "결의",
-    "name": "멸 신양현성",
-    "ic": 611,
-    "피해저항": 221,
-    "피해저항관통": 106,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/611.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "변신",
-    "influence": "침착",
-    "name": "멸 풍신지마",
-    "ic": 612,
-    "피해저항": 124,
-    "피해저항관통": 124,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/612.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "변신",
-    "influence": "의지",
-    "name": "멸 설화백영",
-    "ic": 613,
-    "피해저항": 226,
-    "피해저항관통": 41,
-    "대인피해%": 0,
-    "대인방어%": 16,
-    "iconPath": "/icons/613.png"
+    "iconPath": "/assets/icon/change/61.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 사흉:혼돈",
-    "ic": 629,
+    "ic": 62,
     "피해저항": 0,
     "피해저항관통": 150,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/629.png"
+    "iconPath": "/assets/icon/change/62.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "냉정",
     "name": "극진 청순범경",
-    "ic": 630,
+    "ic": 63,
     "피해저항": 150,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/630.png"
+    "iconPath": "/assets/icon/change/63.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 금작천우",
-    "ic": 631,
+    "ic": 64,
     "피해저항": 190,
     "피해저항관통": 52,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/631.png"
+    "iconPath": "/assets/icon/change/64.png"
   },
   {
     "grade": "전설",
     "type": "변신",
     "influence": "침착",
     "name": "극진 황천갑충",
-    "ic": 632,
+    "ic": 65,
     "피해저항": 52,
     "피해저항관통": 190,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/632.png"
+    "iconPath": "/assets/icon/change/65.png"
+  },
+  {
+    "grade": "불멸",
+    "type": "변신",
+    "influence": "결의",
+    "name": "멸 화저폭군",
+    "ic": 66,
+    "피해저항": 136,
+    "피해저항관통": 136,
+    "대인피해%": 7,
+    "대인방어%": 7,
+    "iconPath": "/assets/icon/change/66.png"
+  },
+  {
+    "grade": "불멸",
+    "type": "변신",
+    "influence": "고요",
+    "name": "멸 마룡명신",
+    "ic": 67,
+    "피해저항": 106,
+    "피해저항관통": 221,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/67.png"
+  },
+  {
+    "grade": "불멸",
+    "type": "변신",
+    "influence": "결의",
+    "name": "멸 신양현성",
+    "ic": 68,
+    "피해저항": 221,
+    "피해저항관통": 106,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/68.png"
+  },
+  {
+    "grade": "불멸",
+    "type": "변신",
+    "influence": "침착",
+    "name": "멸 풍신지마",
+    "ic": 69,
+    "피해저항": 124,
+    "피해저항관통": 124,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/69.png"
+  },
+  {
+    "grade": "불멸",
+    "type": "변신",
+    "influence": "의지",
+    "name": "멸 설화백영",
+    "ic": 70,
+    "피해저항": 226,
+    "피해저항관통": 41,
+    "대인피해%": 0,
+    "대인방어%": 16,
+    "iconPath": "/assets/icon/change/70.png"
   }
 ]

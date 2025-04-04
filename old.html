@@ -1,0 +1,1050 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>우리의 바람</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+    />
+    <link href="/css/main.css" rel="stylesheet"/>
+    <style>
+        .table-responsive thead tr {
+            background-color: #767676;
+            color: #fff;
+        }
+
+        .item {
+            align-items: center;
+            text-align: center;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #0003;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">우리의바람</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">환수정보</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/calculator.html">환수계산기</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">공지사항</h4>
+                    <!--                    <h6 class="card-subtitle mb-10px text-muted">Card subtitle</h6>-->
+                    <p class="card-text">신규환수 제보해주시면 감사하겠습니다.</p>
+                    <a href="javascript:;" class="card-link">오픈톡</a>
+                    <a href="javascript:;" class="card-link">안내사항</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">환수정보</h4>
+                    <div class="mt-3">
+                        <div class="btn btn-primary btn-sm guardBtn">수호</div>
+                        <div class="btn btn-primary btn-sm ms-2 changeBtn">변신</div>
+                    </div>
+                    <div class="mt-3">
+                        <div
+                                id="infoDiv"
+                                class="d-flex justify-content-start gap-4"
+                                style="flex-wrap: wrap"
+                        ></div>
+                    </div>
+                    <div class="mt-3" id="countText">선택된 환수 : 0 / 30</div>
+                    <div class="mt-3">
+                        <button id="resetBtn" class="btn btn-danger">초기화</button>
+                        <button
+                                class="btn btn-success ms-2"
+                                onclick="calculateAndDisplayStats()"
+                        >
+                            계산하기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading">2025년 4월 4일 업데이트 완료!</h4>
+                        <p>
+                            <!--                            수호 : 청풍현 정령록, 복수의 불깨비, 혼돈의 충신,-->
+                            <!--                            만개분엽섬고래, 폭풍의 바람 공작, 전령사관 천신나방 25렙-->
+                            <!--                            장착효과 공유 부탁드립니다!-->
+                        </p>
+                        <hr/>
+                        <p class="mb-0">
+                        <p class="h4">환수 레벨 25 기준으로 최적의 조합을 찾아줍니다.</p>
+                        <p class="h4">탑승 환수는 불멸 > 전설 순으로 많이 착용하는 것이 최적</p>
+                        <p class="h4"><strong>탑승 환수 보스용 결속 냉정 6 = 치위 20% 최적</strong></p>
+                        </p>
+                    </div>
+                    <textarea
+                            id="jsonOutput"
+                            rows="6"
+                            cols="50"
+                            readonly
+                            style="display: none"
+                    ></textarea>
+                    <div class="text-center">
+                        <h4><b>최적 결속 결과</b></h4>
+                    </div>
+                    <div
+                            id="selectedPets"
+                            class="d-flex justify-content-center mt-3"
+                            style="flex-wrap: wrap"
+                    ></div>
+
+                    <div id="resultTable" class="table-responsive mt-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    <div class="row mt-3">-->
+    <!--        <div class="col-12">-->
+    <!--            <div class="card">-->
+    <!--                <div class="card-body">-->
+    <!--                    <h4 class="card-title">환수정보</h4>-->
+    <!--                    <div class="mt-3">-->
+    <!--                        <div class="btn btn-primary btn-sm guardBtn">수호</div>-->
+    <!--                        <div class="btn btn-primary btn-sm ms-2 changeBtn">변신</div>-->
+    <!--                    </div>-->
+    <!--                    <div class="mt-3">-->
+    <!--                        <div id="infoDiv" class="d-flex justify-contents-start" style="flex-wrap: wrap;">-->
+
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="mt-3">선택된 환수 : 0/40</div>-->
+    <!--                    <div class="mt-3">-->
+    <!--                        <div class="btn btn-danger guardBtn">초기화</div>-->
+    <!--                        <div class="btn btn-success ms-2">계산하기</div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <div class="row mt-3">
+        <div class="col-12 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">환수 성장 경험치 표</h4>
+                    <div class="mt-3">
+                        <div class="btn btn-danger btn-sm growthBtn" data-unit="1">
+                            전설 환수
+                        </div>
+                        <div
+                                class="btn btn-warning btn-sm ms-2 growthBtn"
+                                data-unit="3"
+                        >
+                            불멸 환수
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0 growthTable">
+                                <thead>
+                                <tr>
+                                    <th>레벨</th>
+                                    <th>필요 경험치</th>
+                                    <th>레벨</th>
+                                    <th>필요 경험치</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="figureTxt" data-num="717">717</td>
+                                    <td>14</td>
+                                    <td class="figureTxt" data-num="9484">9,484</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="figureTxt" data-num="789">789</td>
+                                    <td>15</td>
+                                    <td class="figureTxt" data-num="10433">10,433</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="figureTxt" data-num="867">867</td>
+                                    <td>16</td>
+                                    <td class="figureTxt" data-num="11476">11,476</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="figureTxt" data-num="1302">1,302</td>
+                                    <td>17</td>
+                                    <td class="figureTxt" data-num="17214">17,214</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="figureTxt" data-num="1431">1,431</td>
+                                    <td>18</td>
+                                    <td class="figureTxt" data-num="18935">18,935</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="figureTxt" data-num="1575">1,575</td>
+                                    <td>19</td>
+                                    <td class="figureTxt" data-num="28403">28,403</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="figureTxt" data-num="1732">1,732</td>
+                                    <td>20</td>
+                                    <td class="figureTxt" data-num="31243">31,243</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="figureTxt" data-num="1905">1,905</td>
+                                    <td>21</td>
+                                    <td class="figureTxt" data-num="31868">31,868</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="figureTxt" data-num="3239">3,239</td>
+                                    <td>22</td>
+                                    <td class="figureTxt" data-num="32505">32,505</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="figureTxt" data-num="3563">3,563</td>
+                                    <td>23</td>
+                                    <td class="figureTxt" data-num="33155">33,155</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td class="figureTxt" data-num="3919">3,919</td>
+                                    <td>24</td>
+                                    <td class="figureTxt" data-num="33828">33,818</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td class="figureTxt" data-num="4312">4,312</td>
+                                    <td>25</td>
+                                    <td class="figureTxt" data-num="34494">34,494</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td class="figureTxt" data-num="4742">4,742</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">환수혼 계산기</h4>
+                    <div class="mt-3">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 selectmenu-custom">
+                                    <div class="form-floating w-100">
+                                        <select id="typeSel" class="form-control">
+                                            <option value="1" selected data-unit="1">전설</option>
+                                            <option value="2" data-unit="3">불멸</option>
+                                        </select>
+                                        <label
+                                                for="typeSel"
+                                                class="d-flex align-items-center fs-13px"
+                                        >
+                                            등급
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input
+                                                type="number"
+                                                class="form-control fs-15px"
+                                                value="0"
+                                                id="currentLevel"
+                                                min="0"
+                                                max="24"
+                                        />
+                                        <label
+                                                for="currentLevel"
+                                                class="d-flex align-items-center fs-13px"
+                                        >
+                                            현재 레벨(0)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input
+                                                type="number"
+                                                class="form-control fs-15px"
+                                                value="25"
+                                                id="targetLevel"
+                                                min="1"
+                                                max="25"
+                                        />
+                                        <label
+                                                for="targetLevel"
+                                                class="d-flex align-items-center fs-13px"
+                                        >
+                                            목표 레벨(25)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <h5 class="card-title">현재 보유한 환수의 혼</h5>
+                                <div class="col-4">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input
+                                                type="number"
+                                                class="form-control fs-15px"
+                                                id="lowerLevel"
+                                                value="0"
+                                                min="0"
+                                                max="50000"
+                                        />
+                                        <label
+                                                for="lowerLevel"
+                                                class="d-flex align-items-center fs-13px"
+                                        >
+                                            하급 혼
+                                        </label>
+                                        <img
+                                                src="/assets/img/lower_growth.jpg"
+                                                class="rounded-circle"
+                                                style="
+                            position: absolute;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            background: none;
+                            font-size: 1rem;
+                            width: 40px;
+                            pointer-events: none;
+                          "
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input
+                                                type="number"
+                                                class="form-control fs-15px"
+                                                id="middleLevel"
+                                                value="0"
+                                                min="0"
+                                                max="50000"
+                                        />
+                                        <label
+                                                for="middleLevel"
+                                                class="d-flex align-items-center fs-13px"
+                                        >
+                                            상급 혼
+                                        </label>
+                                        <img
+                                                src="/assets/img/middle_growth.jpg"
+                                                class="rounded-circle"
+                                                style="
+                            position: absolute;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            background: none;
+                            font-size: 1rem;
+                            width: 40px;
+                            pointer-events: none;
+                          "
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input
+                                                type="number"
+                                                class="form-control fs-15px"
+                                                id="upperLevel"
+                                                value="0"
+                                                min="0"
+                                                max="50000"
+                                        />
+                                        <label
+                                                for="upperLevel"
+                                                class="d-flex align-items-center fs-13px"
+                                        >
+                                            최상급 혼
+                                        </label>
+                                        <img
+                                                src="/assets/img/upper_growth.jpg"
+                                                class="rounded-circle"
+                                                style="
+                            position: absolute;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            background: none;
+                            font-size: 1rem;
+                            width: 40px;
+                            pointer-events: none;
+                          "
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="mt-3 text-center">
+                            <div class="btn btn-block btn-success ms-2 calculateBtn">
+                                필요 경험치 및 환수혼 계산
+                            </div>
+                        </div>
+                        <div
+                                class="alert alert-secondary mt-3 resultDiv"
+                                role="alert"
+                                style="display: none"
+                        >
+                            <div class="p-2">
+                                <div id="calResultDiv"></div>
+                                <div id="resultMessage" class="mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+></script>
+<script>
+    $(document).ready(function () {
+        $(".guardBtn").on('click', function(){
+            $("#resetBtn").trigger('click');
+            guardInfo();
+        });
+
+        $(".changeBtn").on('click', function(){
+            $("#resetBtn").trigger('click');
+            changeInfo();
+        });
+
+        guardInfo();
+        let itemData = [];
+        const MAX_SELECT = 30;
+
+        function guardInfo() {
+            $.getJSON("/js/guard_data.json", function (data) {
+                // ic 값을 기준으로 정렬
+                data.sort((a, b) => a.ic - b.ic);
+                itemData = data;
+
+                var html = "";
+                for (var i = 0; i < data.length; i++) {
+                    html += `
+                        <div class="item">
+                          <input type="checkbox" class="check_item" id="check-${i}" value="${i}">
+                          <label for="check-${i}">
+                            <img src="${data[i].iconPath}" alt="${data[i].name}" style="width:70px; height:70px;">
+                            <div>
+                            ${data[i].name}
+                            </div>
+                          </label>
+                        </div>
+                      `;
+                }
+                $("#infoDiv").html(html);
+            }); //getJSON
+        }
+
+        function changeInfo() {
+            $.getJSON("/js/change_data.json", function (data) {
+                // ic 값을 기준으로 정렬
+                data.sort((a, b) => a.ic - b.ic);
+                itemData = data;
+
+                var html = "";
+                for (var i = 0; i < data.length; i++) {
+                    html += `
+                        <div class="item">
+                          <input type="checkbox" class="check_item" id="check-${i}" value="${i}">
+                          <label for="check-${i}">
+                            <img src="${data[i].iconPath}" alt="${data[i].name}" style="width:70px; height:70px;">
+                            <div>
+                            ${data[i].name}
+                            </div>
+                          </label>
+                        </div>
+                      `;
+                }
+                $("#infoDiv").html(html);
+            }); //getJSON
+        }
+
+        $(document).on("change", ".check_item", function () {
+            const checkedCount = $(".check_item:checked").length;
+
+            if (checkedCount > MAX_SELECT) {
+                alert(`최대 ${MAX_SELECT}마리까지만 선택할 수 있어요!`);
+                $(this).prop("checked", false); // 체크 해제
+                return;
+            }
+
+            updateTextarea(); // 정상일 경우 JSON 업데이트
+            updateCountText(); // 수량 텍스트도 업데이트
+        });
+
+        function updateTextarea() {
+            const selected = [];
+
+            $(".check_item:checked").each(function () {
+                const idx = parseInt($(this).val());
+                selected.push(itemData[idx]);
+            });
+
+            const jsonStr = JSON.stringify(selected, null, 2); // 들여쓰기 포함 JSON
+            $("#jsonOutput").val(jsonStr);
+        }
+
+        function updateCountText() {
+            const checkedCount = $(".check_item:checked").length;
+            $("#countText").text(`선택된 환수 : ${checkedCount} / ${MAX_SELECT}`);
+        }
+
+        $(".growthBtn").click(function () {
+            let unit = $(this).data("unit");
+
+            $(".growthTable .figureTxt").each(function () {
+                let num = parseInt($(this).data("num"));
+                $(this).text((num * unit).toLocaleString());
+            });
+        });
+
+        let selUnit = 1;
+        $("#typeSel").change(function () {
+            selUnit = $(this).find(":selected").data("unit");
+            console.log(selUnit);
+        });
+
+        $(".calculateBtn").click(function () {
+            var expTable = [
+                717, 789, 867, 1302, 1431, 1575, 1732, 1905, 3239, 3563, 3919, 4312,
+                4742, 9484, 10433, 11476, 17214, 18935, 28403, 31243, 31868, 32505,
+                33155, 33818, 34494,
+            ];
+
+            var currentLevel = parseInt($("#currentLevel").val());
+            var targetLevel = parseInt($("#targetLevel").val());
+            var lowerLevel = parseInt($("#lowerLevel").val());
+            var middleLevel = parseInt($("#middleLevel").val());
+            var upperLevel = parseInt($("#upperLevel").val());
+
+            if (
+                isNaN(currentLevel) ||
+                isNaN(targetLevel) ||
+                currentLevel < 0 ||
+                targetLevel > 25 ||
+                currentLevel >= targetLevel
+            ) {
+                alert("올바른 레벨 범위를 입력하세요! (현재 레벨 < 목표 레벨)");
+                return;
+            }
+
+            var totalExp = 0;
+            for (var i = currentLevel; i < targetLevel; i++) {
+                totalExp += expTable[i] * selUnit; // 배열은 0부터 시작
+            }
+
+            $(".resultDiv").show();
+
+            let html = `총 ${totalExp.toLocaleString()} 경험치 필요합니다`;
+            $("#calResultDiv").html(html); // 천 단위 콤마 추가
+
+            // 사용자가 입력한 환수의 혼을 경험치로 변환
+            var lowerExp = lowerLevel * 10;
+            var middleExp = middleLevel * 100;
+            var upperExp = upperLevel * 1000;
+            var totalOwnedExp = lowerExp + middleExp + upperExp;
+
+            var message = `
+                    <h5 class="title">입력한 환수의 혼</h5>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <div>
+                             <img alt="" src="/assets/img/lower_growth.jpg" class="rounded-circle" style="width:50px; height:50px;">
+                        </div>
+                        <div class="ms-2">
+                            <div class="title">하급 : ${lowerLevel.toLocaleString()}</div>
+                            <div class="desc">성장 경험치 : 10</div>
+                        </div>
+                        <div class="ms-3">
+                            <b class="h5">${lowerExp.toLocaleString()}</b>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center mt-2">
+                        <div>
+                             <img alt="" src="/assets/img/middle_growth.jpg" class="rounded-circle" style="width:50px; height:50px;">
+                        </div>
+                        <div class="ms-2">
+                            <div class="title">상급 : ${middleLevel.toLocaleString()}</div>
+                            <div class="desc">성장 경험치 : 100</div>
+                        </div>
+                        <div class="ms-3">
+                            <b class="h5">${middleExp.toLocaleString()}</b>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center mt-2">
+                        <div>
+                             <img alt="" src="/assets/img/upper_growth.jpg" class="rounded-circle" style="width:50px; height:50px;">
+                        </div>
+                        <div class="ms-2">
+                            <div class="title">최상급 : ${upperLevel.toLocaleString()}</div>
+                            <div class="desc">성장 경험치 : 1,000</div>
+                        </div>
+                        <div class="ms-3">
+                            <b class="h5">${upperExp.toLocaleString()}</b>
+                        </div>
+                    </div>
+                `;
+
+            // 필요 경험치와 보유한 경험치를 비교
+            if (totalOwnedExp >= totalExp) {
+                message += `
+                    <div class="mt-3">
+                        <strong class="text-success">충분합니다</strong>
+                    </div>`;
+            } else {
+                var lackingExp = totalExp - totalOwnedExp;
+                message += `
+                    <div class="mt-3">
+                        <strong class="text-danger">${lackingExp.toLocaleString()} 경험치 부족합니다</strong>
+                    </div>`;
+            }
+
+            $("#resultMessage").html(message);
+        });
+        $("input[type='number']").on("input", function () {
+            let val = $(this).val();
+            let min = $(this).attr("min") ? parseInt($(this).attr("min")) : 0;
+            let max = $(this).attr("max")
+                ? parseInt($(this).attr("max"))
+                : Number.MAX_SAFE_INTEGER;
+
+            // 공백이면 0 설정
+            if (val === "") {
+                $(this).val(0);
+                return;
+            }
+
+            // 숫자가 아닌 값 제거 (type="number"라서 사실상 불필요하지만 안전하게 추가)
+            val = val.replace(/[^0-9]/g, "");
+
+            // 맨 앞에 0이 있으면 제거 (단, 숫자 0 하나만 입력된 경우 제외)
+            val = val.replace(/^0+(\d)/, "$1");
+
+            // 최대값 초과 시 자동으로 max 값으로 변경
+            if (parseInt(val) > max) {
+                val = max;
+            }
+
+            $(this).val(val);
+        });
+    });
+</script>
+<script>
+    function getCombinations(arr, selectNumber) {
+        if (selectNumber === 1) return arr.map((item) => [item]);
+
+        let results = [];
+        arr.forEach((fixed, index, origin) => {
+            const rest = origin.slice(index + 1);
+            const combinations = getCombinations(rest, selectNumber - 1);
+            const attached = combinations.map((comb) => [fixed, ...comb]);
+            results.push(...attached);
+        });
+        return results;
+    }
+
+    function calculateStats(pets) {
+        let total = {
+            결속합산값: 0,
+            피해저항관통: 0,
+            피해저항: 0,
+            대인피해: 0,
+            대인방어: 0,
+        };
+        let 등급별 = {불멸: 0, 전설: 0};
+        let 세력별 = {};
+        let 수호불멸 = 0,
+            변신불멸 = 0; // 수호와 변신의 불멸 개수 구분
+        let 수호전설 = 0,
+            변신전설 = 0; // 수호와 변신의 전설 개수 구분
+        let 등급세트효과 = {
+            피해저항관통: 0,
+            피해저항: 0,
+            대인피해: 0,
+            대인방어: 0,
+        };
+        let 세력세트효과 = {피해저항관통: 0, 피해저항: 0};
+
+        pets.forEach((pet) => {
+            let 피해저항관통 = parseFloat(pet.피해저항관통) || 0;
+            let 피해저항 = parseFloat(pet.피해저항) || 0;
+            let 대인피해 = parseFloat(pet["대인피해%"]) || 0;
+            let 대인방어 = parseFloat(pet["대인방어%"]) || 0;
+
+            total.피해저항관통 += 피해저항관통;
+            total.피해저항 += 피해저항;
+            total.대인피해 += 대인피해;
+            total.대인방어 += 대인방어;
+
+            if (pet.grade === "불멸") {
+                등급별.불멸 += 1;
+                if (pet.type === "수호") 수호불멸 += 1;
+                else 변신불멸 += 1;
+            }
+            if (pet.grade === "전설") {
+                등급별.전설 += 1;
+                if (pet.type === "수호") 수호전설 += 1;
+                else 변신전설 += 1;
+            }
+
+            if (pet.influence) {
+                세력별[pet.influence] = (세력별[pet.influence] || 0) + 1;
+            }
+        });
+
+        // ✅ 등급 세트 효과 계산 (불멸 + 전설 조합 적용)
+        if (등급별["전설"] >= 6) {
+            등급세트효과.피해저항관통 += 100;
+            등급세트효과.피해저항 += 100;
+        } else if (등급별["전설"] >= 4) {
+            등급세트효과.피해저항관통 += 100;
+        }
+
+        // ✅ 불멸 효과 적용 (수호/변신 구분)
+        if (수호불멸 >= 6) {
+            등급세트효과.피해저항관통 += 200;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+            등급세트효과.대인방어 += 20;
+        } else if (수호불멸 >= 5) {
+            등급세트효과.피해저항관통 += 200;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+        } else if (수호불멸 >= 3) {
+            등급세트효과.피해저항관통 += 200;
+            등급세트효과.피해저항 += 150;
+        } else if (수호불멸 >= 2) {
+            등급세트효과.피해저항관통 += 200;
+        }
+
+        if (변신불멸 >= 6) {
+            등급세트효과.피해저항관통 += 150;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+            등급세트효과.대인방어 += 20;
+        } else if (변신불멸 >= 5) {
+            등급세트효과.피해저항관통 += 150;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+        } else if (변신불멸 >= 3) {
+            등급세트효과.피해저항관통 += 150;
+            등급세트효과.피해저항 += 150;
+        } else if (변신불멸 >= 2) {
+            등급세트효과.피해저항관통 += 150;
+        }
+
+        // ✅ 세력 세트 효과 (수호/변신 구분)
+        // ✅ 세력 세트 효과 계산 (수호/변신 정확한 값 적용)
+        Object.keys(세력별).forEach((세력) => {
+            const 개수 = 세력별[세력];
+
+            // ✅ 수호: 결의, 고요, 의지 → 피해저항 증가
+            if (["결의", "고요", "의지"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "수호")) {
+                    세력세트효과.피해저항 +=
+                        개수 >= 6
+                            ? 200
+                            : 개수 >= 5
+                                ? 150
+                                : 개수 >= 4
+                                    ? 130
+                                    : 개수 >= 3
+                                        ? 80
+                                        : 개수 >= 2
+                                            ? 50
+                                            : 0;
+                }
+            }
+
+            // ✅ 수호: 침착, 냉정, 활력 → 피해저항관통 증가
+            if (["침착", "냉정", "활력"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "수호")) {
+                    세력세트효과.피해저항관통 +=
+                        개수 >= 6
+                            ? 130
+                            : 개수 >= 5
+                                ? 90
+                                : 개수 >= 4
+                                    ? 80
+                                    : 개수 >= 3
+                                        ? 50
+                                        : 개수 >= 2
+                                            ? 30
+                                            : 0;
+                }
+            }
+
+            // ✅ 변신: 의지, 침착, 활력 → 피해저항 증가
+            if (["의지", "침착", "활력"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "변신")) {
+                    세력세트효과.피해저항 +=
+                        개수 >= 6
+                            ? 200
+                            : 개수 >= 5
+                                ? 150
+                                : 개수 >= 4
+                                    ? 130
+                                    : 개수 >= 3
+                                        ? 80
+                                        : 개수 >= 2
+                                            ? 50
+                                            : 0;
+                }
+            }
+
+            // ✅ 변신: 결의, 고요, 냉정 → 피해저항관통 증가
+            if (["결의", "고요", "냉정"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "변신")) {
+                    세력세트효과.피해저항관통 +=
+                        개수 >= 6
+                            ? 130
+                            : 개수 >= 5
+                                ? 90
+                                : 개수 >= 4
+                                    ? 80
+                                    : 개수 >= 3
+                                        ? 50
+                                        : 개수 >= 2
+                                            ? 30
+                                            : 0;
+                }
+            }
+        });
+
+        // ✅ 최종 합산 계산
+        total.결속합산값 =
+            total.피해저항관통 +
+            total.피해저항 +
+            total.대인피해 * 10 +
+            total.대인방어 * 10 +
+            (등급세트효과.피해저항관통 +
+                등급세트효과.피해저항 +
+                등급세트효과.대인피해 * 10 +
+                등급세트효과.대인방어 * 10) +
+            (세력세트효과.피해저항관통 + 세력세트효과.피해저항);
+
+        return {
+            결속합산값: total.결속합산값,
+            속성총합: `피해저항관통 ${total.피해저항관통} 피해저항 ${total.피해저항} 대인피해 ${total.대인피해}% 대인방어 ${total.대인방어}%`,
+            등급: `${등급별.불멸}불멸 ${등급별.전설}전설`.trim(),
+            등급세트효과,
+            세력: Object.entries(세력별)
+                .map(([key, value]) => `${value}${key}`)
+                .join(" "),
+            세력세트효과,
+        };
+    }
+
+    function calculateAndDisplayStats() {
+        const petsInput = document.getElementById("jsonOutput").value;
+
+        let pets;
+        try {
+            pets = JSON.parse(petsInput);
+            if (!Array.isArray(pets)) throw new Error();
+        } catch (error) {
+            alert("1개 이상 환수 데이터를 선택하세요.");
+            return;
+        }
+
+        let bestCombination = [];
+        let bestStats;
+
+        if (pets.length <= 6) {
+            // ✅ 6마리 이하라면 그대로 계산
+            bestCombination = pets;
+            bestStats = calculateStats(bestCombination);
+        } else {
+            const combinations = getCombinations(pets, 6);
+            let maxValue = 0;
+
+            combinations.forEach((comb) => {
+                const stats = calculateStats(comb);
+                if (stats.결속합산값 > maxValue) {
+                    maxValue = stats.결속합산값;
+                    bestCombination = comb;
+                    bestStats = stats;
+                }
+            });
+        }
+
+        displayResults(bestStats, bestCombination);
+        // const combinations = getCombinations(pets, 6);
+        // let bestCombination = [];
+        // let maxValue = 0;
+        //
+        // combinations.forEach(comb => {
+        //     const stats = calculateStats(comb);
+        //     if (stats.결속합산값 > maxValue) {
+        //         maxValue = stats.결속합산값;
+        //         bestCombination = comb;
+        //     }
+        // });
+        //
+        // const bestStats = calculateStats(bestCombination);
+        // displayResults(bestStats, bestCombination);
+    }
+
+    function displayResults(stats, selectedPets) {
+        const selectedPetsDiv = document.getElementById("selectedPets");
+        selectedPetsDiv.innerHTML = selectedPets
+            .map(
+                (pet) =>
+                    `<div class="item">
+                    <img src="${pet.iconPath}" alt="${pet.name}" style="width:70px; height:70px;">
+                    <span>${pet.name}</span>
+                </div>`
+            )
+            .join("");
+
+        // const resultTable = document.getElementById("resultTable").querySelector("tbody");
+        //
+        // resultTable.innerHTML = ""; // 결과 초기화
+
+        // let pets;
+        // try {
+        //   pets = JSON.parse(petsInput);
+        //   if (!Array.isArray(pets)) throw new Error();
+        // } catch (error) {
+        //   alert("올바른 JSON 형식의 펫 데이터를 입력하세요.");
+        //   return;
+        // }
+
+        // const stats = calculateStats(pets);
+
+        const rows = [
+            ["결속 합산값", stats.결속합산값],
+            ["속성 총합", stats.속성총합],
+            ["등급", stats.등급],
+            [
+                "등급 세트 효과",
+                `피해저항관통 ${stats.등급세트효과.피해저항관통} 피해저항 ${stats.등급세트효과.피해저항}`,
+            ],
+            ["세력", stats.세력],
+            [
+                "세력 세트 효과",
+                `피해저항관통 ${stats.세력세트효과.피해저항관통} 피해저항 ${stats.세력세트효과.피해저항}`,
+            ],
+        ];
+
+        let html = `<table class="table table-bordered mb-0"><tbody>`;
+
+        rows.forEach(([key, value]) => {
+            html += `
+                <tr>
+                  <td>${key}</td>
+                  <td>${value}</td>
+                </tr>
+              `;
+        });
+
+        html += `</tbody></table>`;
+
+        document.getElementById("resultTable").innerHTML = html;
+
+        // rows.forEach(([key, value]) => {
+        //     const row = document.createElement("tr");
+        //     const keyCell = document.createElement("td");
+        //     const valueCell = document.createElement("td");
+        //
+        //     keyCell.textContent = key;
+        //     valueCell.textContent = value;
+        //
+        //     row.appendChild(keyCell);
+        //     row.appendChild(valueCell);
+        //     resultTable.appendChild(row);
+        // });
+    }
+
+    document.getElementById("resetBtn").addEventListener("click", function () {
+        // 1. 체크박스 전부 해제
+        document.querySelectorAll(".check_item").forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+
+        // 2. textarea 초기화 (jsonOutput 있으면)
+        if (document.getElementById("jsonOutput")) {
+            document.getElementById("jsonOutput").value = "";
+        }
+
+        document.getElementById("selectedPets").innerHTML = "";
+        // 3. 결과 테이블 비우기
+        document.getElementById("resultTable").innerHTML = "";
+
+        // 4. 선택 수 카운트 텍스트 초기화 (있을 경우)
+        const countText = document.getElementById("countText");
+        if (countText) {
+            countText.textContent = "선택된 환수 : 0 / 30";
+        }
+    });
+</script>
+</body>
+</html>

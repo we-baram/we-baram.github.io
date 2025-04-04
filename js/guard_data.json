@@ -2,889 +2,877 @@
   {
     "grade": "전설",
     "type": "수호",
-    "influence": "고요",
-    "name": "해태",
-    "ic": 108,
-    "피해저항": 47,
-    "피해저항관통": 0,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/108.png"
-  },
-  {
-    "grade": "전설",
-    "type": "수호",
-    "influence": "고요",
-    "name": "나티",
-    "ic": 109,
-    "피해저항": 0,
-    "피해저항관통": 33,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/109.png"
-  },
-  {
-    "grade": "전설",
-    "type": "수호",
     "influence": "결의",
     "name": "무사 견인",
-    "ic": 104,
+    "ic": 1,
     "피해저항": 48,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/104.png"
+    "iconPath": "/assets/icon/guard/1.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "무사 백견인",
-    "ic": 105,
+    "ic": 2,
     "피해저항": 48,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/105.png"
+    "iconPath": "/assets/icon/guard/2.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "선자 묘인",
-    "ic": 106,
+    "ic": 3,
     "피해저항": 0,
     "피해저항관통": 27,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/106.png"
+    "iconPath": "/assets/icon/guard/3.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "선자 흑묘인",
-    "ic": 107,
+    "ic": 4,
     "피해저항": 0,
     "피해저항관통": 27,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/107.png"
+    "iconPath": "/assets/icon/guard/4.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
-    "influence": "의지",
-    "name": "녹빛이룡",
-    "ic": 112,
-    "피해저항": 0,
-    "피해저항관통": 33,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/112.png"
-  },
-  {
-    "grade": "전설",
-    "type": "수호",
-    "influence": "의지",
-    "name": "적빛이룡",
-    "ic": 113,
-    "피해저항": 0,
-    "피해저항관통": 33,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/113.png"
-  },
-  {
-    "grade": "전설",
-    "type": "수호",
-    "influence": "침착",
-    "name": "황금해태",
-    "ic": 115,
+    "influence": "고요",
+    "name": "해태",
+    "ic": 5,
     "피해저항": 47,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/115.png"
+    "iconPath": "/assets/icon/guard/5.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "고요",
+    "name": "나티",
+    "ic": 6,
+    "피해저항": 0,
+    "피해저항관통": 33,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/6.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "궁기",
-    "ic": 110,
+    "ic": 7,
     "피해저항": 47,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/110.png"
+    "iconPath": "/assets/icon/guard/7.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "옥색궁기",
-    "ic": 111,
+    "ic": 8,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/111.png"
+    "iconPath": "/assets/icon/guard/8.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
-    "influence": "냉정",
-    "name": "백모나티",
-    "ic": 116,
+    "influence": "의지",
+    "name": "녹빛이룡",
+    "ic": 9,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/116.png"
+    "iconPath": "/assets/icon/guard/9.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "의지",
+    "name": "적빛이룡",
+    "ic": 10,
+    "피해저항": 0,
+    "피해저항관통": 33,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/10.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "강철적깨비불",
-    "ic": 114,
+    "ic": 11,
     "피해저항": 71,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/114.png"
+    "iconPath": "/assets/icon/guard/11.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "침착",
+    "name": "황금해태",
+    "ic": 12,
+    "피해저항": 47,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/12.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "냉정",
+    "name": "백모나티",
+    "ic": 13,
+    "피해저항": 0,
+    "피해저항관통": 33,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/13.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "대도사마귀",
-    "ic": 117,
+    "ic": 14,
     "피해저항": 0,
     "피해저항관통": 50,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/117.png"
+    "iconPath": "/assets/icon/guard/14.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "협객붉은판다",
-    "ic": 118,
+    "ic": 15,
     "피해저항": 0,
     "피해저항관통": 29,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/118.png"
+    "iconPath": "/assets/icon/guard/15.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "개척자 쿼카",
-    "ic": 119,
+    "ic": 16,
     "피해저항": 56,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/119.png"
+    "iconPath": "/assets/icon/guard/16.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "강태공 수달",
-    "ic": 120,
+    "ic": 17,
     "피해저항": 52,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/120.png"
+    "iconPath": "/assets/icon/guard/17.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "천둥벼락 알파카",
-    "ic": 121,
+    "ic": 18,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/121.png"
+    "iconPath": "/assets/icon/guard/18.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "성광 부엉이",
-    "ic": 122,
+    "ic": 19,
     "피해저항": 52,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/122.png"
+    "iconPath": "/assets/icon/guard/19.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "장원급제 토끼",
-    "ic": 123,
+    "ic": 20,
     "피해저항": 60,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/123.png"
+    "iconPath": "/assets/icon/guard/20.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "훈장님 진돌이",
-    "ic": 124,
+    "ic": 21,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/124.png"
+    "iconPath": "/assets/icon/guard/21.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "눈폭탄 눈깨비",
-    "ic": 126,
+    "ic": 22,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/126.png"
+    "iconPath": "/assets/icon/guard/22.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "낚시달인 아기펭귄",
-    "ic": 127,
+    "ic": 23,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/127.png"
+    "iconPath": "/assets/icon/guard/23.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "대노 흑오리",
-    "ic": 128,
+    "ic": 24,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/128.png"
+    "iconPath": "/assets/icon/guard/24.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "달팽이 한 채",
-    "ic": 129,
+    "ic": 25,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/129.png"
+    "iconPath": "/assets/icon/guard/25.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "광포한 애기박쥐",
-    "ic": 130,
+    "ic": 26,
     "피해저항": 54,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/130.png"
+    "iconPath": "/assets/icon/guard/26.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "복수의 풀깨비",
-    "ic": 131,
+    "ic": 27,
     "피해저항": 0,
     "피해저항관통": 33,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/131.png"
+    "iconPath": "/assets/icon/guard/27.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "쾌도난마 연꽃앵무",
-    "ic": 132,
+    "ic": 28,
     "피해저항": 59,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/132.png"
+    "iconPath": "/assets/icon/guard/28.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "괄목상대 방랑사자",
-    "ic": 125,
+    "ic": 29,
     "피해저항": 0,
     "피해저항관통": 50,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/125.png"
+    "iconPath": "/assets/icon/guard/29.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "만산홍엽 섬고래",
-    "ic": 133,
+    "ic": 30,
     "피해저항": 0,
     "피해저항관통": 43,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/133.png"
+    "iconPath": "/assets/icon/guard/30.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "전령사관 귀신나방",
-    "ic": 134,
+    "ic": 31,
     "피해저항": 53,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/134.png"
+    "iconPath": "/assets/icon/guard/31.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "흑자홍염 망령사슴",
-    "ic": 371,
+    "ic": 32,
     "피해저항": 0,
     "피해저항관통": 43,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/371.png"
+    "iconPath": "/assets/icon/guard/32.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "적건자객 홍안토끼",
-    "ic": 380,
+    "ic": 33,
     "피해저항": 0,
     "피해저항관통": 50,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/380.png"
+    "iconPath": "/assets/icon/guard/33.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "청염환도 푸른해치",
-    "ic": 389,
+    "ic": 34,
     "피해저항": 62,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/389.png"
+    "iconPath": "/assets/icon/guard/34.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "청사등롱 미호누이",
-    "ic": 398,
+    "ic": 35,
     "피해저항": 61,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/398.png"
+    "iconPath": "/assets/icon/guard/35.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "홍염귀영 백귀묘",
-    "ic": 407,
+    "ic": 36,
     "피해저항": 75,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/407.png"
+    "iconPath": "/assets/icon/guard/36.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "화려한 흰까마귀",
-    "ic": 416,
+    "ic": 37,
     "피해저항": 0,
     "피해저항관통": 49,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/416.png"
+    "iconPath": "/assets/icon/guard/37.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "약탈꾼 아기상어",
-    "ic": 425,
+    "ic": 38,
     "피해저항": 36,
     "피해저항관통": 30,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/425.png"
-  },
-  {
-    "grade": "전설",
-    "type": "수호",
-    "influence": "침착",
-    "name": "길달의 수호 도깨비",
-    "ic": 432,
-    "피해저항": 44,
-    "피해저항관통": 0,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/432.png"
+    "iconPath": "/assets/icon/guard/38.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "청옥청년 백조",
-    "ic": 440,
+    "ic": 39,
     "피해저항": 0,
     "피해저항관통": 64,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/440.png"
+    "iconPath": "/assets/icon/guard/39.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "성스러운 웅녀",
-    "ic": 449,
+    "ic": 40,
     "피해저항": 32,
     "피해저항관통": 32,
     "대인피해%": 5,
     "대인방어%": 0,
-    "iconPath": "/icons/449.png"
+    "iconPath": "/assets/icon/guard/40.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "포근포근 눈토끼",
-    "ic": 455,
+    "ic": 41,
     "피해저항": 0,
     "피해저항관통": 69,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/455.png"
+    "iconPath": "/assets/icon/guard/41.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "정령 도롱뇽",
-    "ic": 464,
+    "ic": 42,
     "피해저항": 0,
     "피해저항관통": 68,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/464.png"
+    "iconPath": "/assets/icon/guard/42.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "검객 우수생 멍멍이",
-    "ic": 473,
+    "ic": 43,
     "피해저항": 13,
     "피해저항관통": 48,
     "대인피해%": 5,
     "대인방어%": 0,
-    "iconPath": "/icons/473.png"
+    "iconPath": "/assets/icon/guard/43.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "자연인 쿼카",
-    "ic": 484,
+    "ic": 44,
     "피해저항": 56,
     "피해저항관통": 13,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/484.png"
+    "iconPath": "/assets/icon/guard/44.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "과일 한바구니 숙녀벌",
-    "ic": 482,
+    "ic": 45,
     "피해저항": 56,
     "피해저항관통": 13,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/482.png"
+    "iconPath": "/assets/icon/guard/45.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "주광 부엉이",
-    "ic": 498,
+    "ic": 46,
     "피해저항": 0,
     "피해저항관통": 70,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/498.png"
+    "iconPath": "/assets/icon/guard/46.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "귀신불꽃 거미",
-    "ic": 499,
+    "ic": 47,
     "피해저항": 0,
     "피해저항관통": 70,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/499.png"
+    "iconPath": "/assets/icon/guard/47.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "냉정두목 흑오리",
-    "ic": 513,
+    "ic": 48,
     "피해저항": 60,
     "피해저항관통": 15,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/513.png"
+    "iconPath": "/assets/icon/guard/48.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "우아 나비요정",
-    "ic": 514,
+    "ic": 49,
     "피해저항": 15,
     "피해저항관통": 60,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/514.png"
-  },
-  {
-    "grade": "전설",
-    "type": "수호",
-    "influence": "활력",
-    "name": "화염비늘 능리",
-    "ic": 528,
-    "피해저항": 18,
-    "피해저항관통": 46,
-    "대인피해%": 0,
-    "대인방어%": 5,
-    "iconPath": "/icons/528.png"
+    "iconPath": "/assets/icon/guard/49.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "생선함께 수달",
-    "ic": 529,
+    "ic": 50,
     "피해저항": 46,
     "피해저항관통": 18,
     "대인피해%": 0,
     "대인방어%": 5,
-    "iconPath": "/icons/529.png"
+    "iconPath": "/assets/icon/guard/50.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "활력",
+    "name": "화염비늘 능리",
+    "ic": 51,
+    "피해저항": 18,
+    "피해저항관통": 46,
+    "대인피해%": 0,
+    "대인방어%": 5,
+    "iconPath": "/assets/icon/guard/51.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "야광 미치광이 해파리",
-    "ic": 543,
+    "ic": 52,
     "피해저항": 18,
     "피해저항관통": 46,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/543.png"
+    "iconPath": "/assets/icon/guard/52.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "정착자 아기펭귄",
-    "ic": 544,
+    "ic": 53,
     "피해저항": 46,
     "피해저항관통": 18,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/544.png"
+    "iconPath": "/assets/icon/guard/53.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "선인 갓파",
-    "ic": 558,
+    "ic": 54,
     "피해저항": 18,
     "피해저항관통": 46,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/558.png"
+    "iconPath": "/assets/icon/guard/54.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "협객회색판다",
-    "ic": 559,
+    "ic": 55,
     "피해저항": 46,
     "피해저항관통": 18,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/559.png"
+    "iconPath": "/assets/icon/guard/55.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "결의",
     "name": "불꽃 눈깨비",
-    "ic": 560,
+    "ic": 56,
     "피해저항": 27,
     "피해저항관통": 27,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/560.png"
+    "iconPath": "/assets/icon/guard/56.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "개척가 바라미",
-    "ic": 578,
+    "ic": 57,
     "피해저항": 15,
     "피해저항관통": 51,
     "대인피해%": 0,
     "대인방어%": 5,
-    "iconPath": "/icons/578.png"
+    "iconPath": "/assets/icon/guard/57.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "쾌도난마 수련앵무",
-    "ic": 579,
+    "ic": 58,
     "피해저항": 51,
     "피해저항관통": 15,
     "대인피해%": 0,
     "대인방어%": 5,
-    "iconPath": "/icons/579.png"
+    "iconPath": "/assets/icon/guard/58.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "대사부 판다",
-    "ic": 593,
+    "ic": 59,
     "피해저항": 0,
     "피해저항관통": 64,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/593.png"
+    "iconPath": "/assets/icon/guard/59.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "활력",
     "name": "기와 팽이",
-    "ic": 594,
+    "ic": 60,
     "피해저항": 0,
     "피해저항관통": 64,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/594.png"
+    "iconPath": "/assets/icon/guard/60.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "왕관 깃털수리",
-    "ic": 614,
+    "ic": 61,
     "피해저항": 64,
     "피해저항관통": 0,
     "대인피해%": 3,
     "대인방어%": 3,
-    "iconPath": "/icons/614.png"
+    "iconPath": "/assets/icon/guard/61.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "고요",
     "name": "광포한 맹독박쥐",
-    "ic": 615,
+    "ic": 62,
     "피해저항": 0,
     "피해저항관통": 64,
     "대인피해%": 3,
     "대인방어%": 3,
-    "iconPath": "/icons/615.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "수호",
-    "influence": "결의",
-    "name": "화운 금돼지",
-    "ic": 618,
-    "피해저항": 58,
-    "피해저항관통": 58,
-    "대인피해%": 7,
-    "대인방어%": 7,
-    "iconPath": "/icons/618.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "수호",
-    "influence": "고요",
-    "name": "여의주 흑룡",
-    "ic": 619,
-    "피해저항": 59,
-    "피해저항관통": 124,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/619.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "수호",
-    "influence": "결의",
-    "name": "성운 백양",
-    "ic": 620,
-    "피해저항": 124,
-    "피해저항관통": 59,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/620.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "수호",
-    "influence": "침착",
-    "name": "유성 일각수",
-    "ic": 621,
-    "피해저항": 49,
-    "피해저항관통": 49,
-    "대인피해%": 0,
-    "대인방어%": 0,
-    "iconPath": "/icons/621.png"
-  },
-  {
-    "grade": "불멸",
-    "type": "수호",
-    "influence": "의지",
-    "name": "화린 금사",
-    "ic": 622,
-    "피해저항": 86,
-    "피해저항관통": 21,
-    "대인피해%": 0,
-    "대인방어%": 16,
-    "iconPath": "/icons/622.png"
+    "iconPath": "/assets/icon/guard/62.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "청풍현 정령록",
-    "ic": 623,
+    "ic": 63,
     "피해저항": 0,
     "피해저항관통": 62,
     "대인피해%": 0,
     "대인방어%": 6,
-    "iconPath": "/icons/623.png"
+    "iconPath": "/assets/icon/guard/63.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "의지",
     "name": "복수의 불깨비",
-    "ic": 624,
+    "ic": 64,
     "피해저항": 62,
     "피해저항관통": 0,
-    "대인피해%": 6,
+    "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/624.png"
+    "iconPath": "/assets/icon/guard/64.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "혼돈의 충신",
-    "ic": 625,
+    "ic": 65,
     "피해저항": 0,
     "피해저항관통": 50,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/625.png"
+    "iconPath": "/assets/icon/guard/65.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "냉정",
     "name": "만개분엽 섬고래",
-    "ic": 626,
+    "ic": 66,
     "피해저항": 50,
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/626.png"
+    "iconPath": "/assets/icon/guard/66.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "폭풍의 바람 공작",
-    "ic": 627,
+    "ic": 67,
     "피해저항": 79,
     "피해저항관통": 18,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/627.png"
+    "iconPath": "/assets/icon/guard/67.jpg"
   },
   {
     "grade": "전설",
     "type": "수호",
     "influence": "침착",
     "name": "전령사관 천신나방",
-    "ic": 628,
+    "ic": 68,
     "피해저항": 18,
     "피해저항관통": 79,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/icons/628.png"
+    "iconPath": "/assets/icon/guard/68.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "결의",
+    "name": "화운 금돼지",
+    "ic": 69,
+    "피해저항": 58,
+    "피해저항관통": 58,
+    "대인피해%": 7,
+    "대인방어%": 7,
+    "iconPath": "/assets/icon/guard/69.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "고요",
+    "name": "여의주 흑룡",
+    "ic": 70,
+    "피해저항": 59,
+    "피해저항관통": 124,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/70.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "결의",
+    "name": "성운 백양",
+    "ic": 71,
+    "피해저항": 124,
+    "피해저항관통": 59,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/71.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "침착",
+    "name": "유성 일각수",
+    "ic": 72,
+    "피해저항": 49,
+    "피해저항관통": 49,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/72.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "의지",
+    "name": "화린 금사",
+    "ic": 73,
+    "피해저항": 86,
+    "피해저항관통": 21,
+    "대인피해%": 0,
+    "대인방어%": 16,
+    "iconPath": "/assets/icon/guard/73.jpg"
   }
 ]

@@ -23,3 +23,28 @@ table thead th {
   background-color: #767676 !important;
   color: #fff !important;
 }
+#selectedPets {
+  gap: 20px;
+}
+#selectedPets .item span,
+#infoDiv .item label > div {
+  font-size: 12px;
+  font-weight: 700;
+  word-break: keep-all;
+  margin-top: 8px;
+  /* display: none; */
+}
+#infoDiv .item {
+  position: relative;
+}
+#infoDiv .item input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+#infoDiv .item:has(input:checked) {
+  box-shadow: 0 0 0 4px #f00;
+}
+#infoDiv .item label {
+}

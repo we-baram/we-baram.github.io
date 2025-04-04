@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펫 스탯 계산기</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+<h2>펫 스탯 계산기</h2>
+
+<label>펫 데이터 입력 (JSON 형식):</label>
+<textarea id="petsInput" rows="6" cols="50">[
+ {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "냉정",
+    "name": "무사 백견인",
+    "ic": 2,
+    "피해저항": 48,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/2.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "활력",
+    "name": "선자 묘인",
+    "ic": 3,
+    "피해저항": 0,
+    "피해저항관통": 27,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/3.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "활력",
+    "name": "선자 흑묘인",
+    "ic": 4,
+    "피해저항": 0,
+    "피해저항관통": 27,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/4.jpg"
+  },
+{
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "결의",
+    "name": "화운 금돼지",
+    "ic": 69,
+    "피해저항": 58,
+    "피해저항관통": 58,
+    "대인피해%": 7,
+    "대인방어%": 7,
+    "iconPath": "/assets/icon/guard/69.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "고요",
+    "name": "여의주 흑룡",
+    "ic": 70,
+    "피해저항": 59,
+    "피해저항관통": 124,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/70.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "결의",
+    "name": "성운 백양",
+    "ic": 71,
+    "피해저항": 124,
+    "피해저항관통": 59,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/71.jpg"
+  }
+]</textarea>
+
+<button onclick="calculateAndDisplayStats()">스탯 계산</button>
+
+<h3>선택된 펫:</h3>
+<div id="selectedPets"></div>
+
+<h3>결과:</h3>
+<table id="resultTable">
+    <tbody></tbody>
+</table>
+
+<script>
+    function getCombinations(arr, selectNumber) {
+        if (selectNumber === 1) return arr.map(item => [item]);
+
+        let results = [];
+        arr.forEach((fixed, index, origin) => {
+            const rest = origin.slice(index + 1);
+            const combinations = getCombinations(rest, selectNumber - 1);
+            const attached = combinations.map(comb => [fixed, ...comb]);
+            results.push(...attached);
+        });
+        return results;
+    }
+
+    function calculateStats(pets) {
+        let total = {결속합산값: 0, 피해저항관통: 0, 피해저항: 0, 대인피해: 0, 대인방어: 0};
+        let 등급별 = {불멸: 0, 전설: 0};
+        let 세력별 = {};
+        let 수호불멸 = 0, 변신불멸 = 0; // 수호와 변신의 불멸 개수 구분
+        let 수호전설 = 0, 변신전설 = 0; // 수호와 변신의 전설 개수 구분
+        let 등급세트효과 = {피해저항관통: 0, 피해저항: 0, 대인피해: 0, 대인방어: 0};
+        let 세력세트효과 = {피해저항관통: 0, 피해저항: 0};
+
+        pets.forEach((pet) => {
+            let 피해저항관통 = parseFloat(pet.피해저항관통) || 0;
+            let 피해저항 = parseFloat(pet.피해저항) || 0;
+            let 대인피해 = parseFloat(pet["대인피해%"]) || 0;
+            let 대인방어 = parseFloat(pet["대인방어%"]) || 0;
+
+            total.피해저항관통 += 피해저항관통;
+            total.피해저항 += 피해저항;
+            total.대인피해 += 대인피해;
+            total.대인방어 += 대인방어;
+
+            if (pet.grade === "불멸") {
+                등급별.불멸 += 1;
+                if (pet.type === "수호") 수호불멸 += 1;
+                else 변신불멸 += 1;
+            }
+            if (pet.grade === "전설") {
+                등급별.전설 += 1;
+                if (pet.type === "수호") 수호전설 += 1;
+                else 변신전설 += 1;
+            }
+
+
+            if (pet.influence) {
+                세력별[pet.influence] = (세력별[pet.influence] || 0) + 1;
+            }
+        });
+
+        // ✅ 등급 세트 효과 계산 (불멸 + 전설 조합 적용)
+        if (등급별["전설"] >= 6) {
+            등급세트효과.피해저항관통 += 100;
+            등급세트효과.피해저항 += 100;
+        } else if (등급별["전설"] >= 4) {
+            등급세트효과.피해저항관통 += 100;
+        }
+
+// ✅ 불멸 효과 적용 (수호/변신 구분)
+        if (수호불멸 >= 6) {
+            등급세트효과.피해저항관통 += 200;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+            등급세트효과.대인방어 += 20;
+        } else if (수호불멸 >= 5) {
+            등급세트효과.피해저항관통 += 200;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+        } else if (수호불멸 >= 3) {
+            등급세트효과.피해저항관통 += 200;
+            등급세트효과.피해저항 += 150;
+        } else if (수호불멸 >= 2) {
+            등급세트효과.피해저항관통 += 200;
+        }
+
+        if (변신불멸 >= 6) {
+            등급세트효과.피해저항관통 += 150;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+            등급세트효과.대인방어 += 20;
+        } else if (변신불멸 >= 5) {
+            등급세트효과.피해저항관통 += 150;
+            등급세트효과.피해저항 += 150;
+            등급세트효과.대인피해 += 20;
+        } else if (변신불멸 >= 3) {
+            등급세트효과.피해저항관통 += 150;
+            등급세트효과.피해저항 += 150;
+        } else if (변신불멸 >= 2) {
+            등급세트효과.피해저항관통 += 150;
+        }
+
+        // ✅ 세력 세트 효과 (수호/변신 구분)
+// ✅ 세력 세트 효과 계산 (수호/변신 정확한 값 적용)
+        Object.keys(세력별).forEach((세력) => {
+            const 개수 = 세력별[세력];
+
+            // ✅ 수호: 결의, 고요, 의지 → 피해저항 증가
+            if (["결의", "고요", "의지"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "수호")) {
+                    세력세트효과.피해저항 += 개수 >= 6 ? 200 :
+                        개수 >= 5 ? 150 :
+                            개수 >= 4 ? 130 :
+                                개수 >= 3 ? 80 :
+                                    개수 >= 2 ? 50 : 0;
+                }
+            }
+
+            // ✅ 수호: 침착, 냉정, 활력 → 피해저항관통 증가
+            if (["침착", "냉정", "활력"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "수호")) {
+                    세력세트효과.피해저항관통 += 개수 >= 6 ? 130 :
+                        개수 >= 5 ? 90 :
+                            개수 >= 4 ? 80 :
+                                개수 >= 3 ? 50 :
+                                    개수 >= 2 ? 30 : 0;
+                }
+            }
+
+            // ✅ 변신: 의지, 침착, 활력 → 피해저항 증가
+            if (["의지", "침착", "활력"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "변신")) {
+                    세력세트효과.피해저항 += 개수 >= 6 ? 200 :
+                        개수 >= 5 ? 150 :
+                            개수 >= 4 ? 130 :
+                                개수 >= 3 ? 80 :
+                                    개수 >= 2 ? 50 : 0;
+                }
+            }
+
+            // ✅ 변신: 결의, 고요, 냉정 → 피해저항관통 증가
+            if (["결의", "고요", "냉정"].includes(세력)) {
+                if (pets.some((pet) => pet.type === "변신")) {
+                    세력세트효과.피해저항관통 += 개수 >= 6 ? 130 :
+                        개수 >= 5 ? 90 :
+                            개수 >= 4 ? 80 :
+                                개수 >= 3 ? 50 :
+                                    개수 >= 2 ? 30 : 0;
+                }
+            }
+        });
+
+        // ✅ 최종 합산 계산
+        total.결속합산값 =
+            (total.피해저항관통 + total.피해저항 + total.대인피해 * 10 + total.대인방어 * 10) +
+            (등급세트효과.피해저항관통 + 등급세트효과.피해저항 + 등급세트효과.대인피해 * 10 + 등급세트효과.대인방어 * 10) +
+            (세력세트효과.피해저항관통 + 세력세트효과.피해저항);
+
+        return {
+            결속합산값: total.결속합산값,
+            속성총합: `피해저항관통 ${total.피해저항관통} 피해저항 ${total.피해저항} 대인피해 ${total.대인피해}% 대인방어 ${total.대인방어}%`,
+            등급: `${등급별.불멸}불멸 ${등급별.전설}전설`.trim(),
+            등급세트효과,
+            세력: Object.entries(세력별).map(([key, value]) => `${value}${key}`).join(" "),
+            세력세트효과
+        };
+    }
+
+    function calculateAndDisplayStats() {
+        const petsInput = document.getElementById("petsInput").value;
+
+      let pets;
+      try {
+        pets = JSON.parse(petsInput);
+        if (!Array.isArray(pets)) throw new Error();
+      } catch (error) {
+        alert("올바른 JSON 형식의 펫 데이터를 입력하세요.");
+        return;
+      }
+
+      const combinations = getCombinations(pets, 6);
+      let bestCombination = [];
+      let maxValue = 0;
+
+      combinations.forEach(comb => {
+        const stats = calculateStats(comb);
+        if (stats.결속합산값 > maxValue) {
+          maxValue = stats.결속합산값;
+          bestCombination = comb;
+        }
+      });
+
+      const bestStats = calculateStats(bestCombination);
+      displayResults(bestStats, bestCombination);
+    }
+
+    function displayResults(stats, selectedPets){
+      const selectedPetsDiv = document.getElementById("selectedPets");
+      selectedPetsDiv.innerHTML = selectedPets.map(pet =>
+              `<div class="pet-item">
+                    <img src="${pet.iconPath}" alt="${pet.name}">
+                    <span>${pet.name}</span>
+                </div>`
+      ).join("");
+
+      const resultTable = document.getElementById("resultTable").querySelector("tbody");
+
+      resultTable.innerHTML = ""; // 결과 초기화
+
+      // let pets;
+      // try {
+      //   pets = JSON.parse(petsInput);
+      //   if (!Array.isArray(pets)) throw new Error();
+      // } catch (error) {
+      //   alert("올바른 JSON 형식의 펫 데이터를 입력하세요.");
+      //   return;
+      // }
+
+      // const stats = calculateStats(pets);
+
+      const rows = [
+        ["결속 합산값", stats.결속합산값],
+        ["속성 총합", stats.속성총합],
+        ["등급", stats.등급],
+        ["등급 세트 효과", `피해저항관통 ${stats.등급세트효과.피해저항관통} 피해저항 ${stats.등급세트효과.피해저항}`],
+        ["세력", stats.세력],
+        ["세력 세트 효과", `피해저항관통 ${stats.세력세트효과.피해저항관통} 피해저항 ${stats.세력세트효과.피해저항}`]
+      ];
+
+      rows.forEach(([key, value]) => {
+        const row = document.createElement("tr");
+        const keyCell = document.createElement("td");
+        const valueCell = document.createElement("td");
+
+        keyCell.textContent = key;
+        valueCell.textContent = value;
+
+        row.appendChild(keyCell);
+        row.appendChild(valueCell);
+        resultTable.appendChild(row);
+      });
+    }
+</script>
+</body>
+</html>
