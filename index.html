@@ -32,80 +32,101 @@
     </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="position: relative; height:50px;
+       max-width: 1280px;
+    margin: 0 auto;">
+        <div class="container d-flex justify-content-start align-items-center">
+            <a class="navbar-brand" href="/">
+                <img src="https://dszw1qtcnsa5e.cloudfront.net/community/20241205/b5ba1553-e56c-4dc6-aa88-22d011bbcd9b/%EB%B0%94%EB%9E%8C%EC%97%B0%EA%B8%B0%EB%B3%B8%EC%95%84%EC%9D%B4%EC%BD%98.png"
+                     alt="Logo" style="width:40px; height:40px;"
+                     class="d-inline-block align-text-top">
+                <span>
+                    우리의바람
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">환수정보</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/calculator.html">환수혼계산기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <div id="wrap">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">우리의바람</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">환수정보</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/calculator.html">환수계산기</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="row mt-3">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">공지사항</h4>
-                    <!--                    <h6 class="card-subtitle mb-10px text-muted">Card subtitle</h6>-->
-                    <p class="card-text">신규환수 제보해주시면 감사하겠습니다.</p>
-                    <a href="javascript:;" class="card-link">오픈톡</a>
-                    <a href="javascript:;" class="card-link">안내사항</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mt-3">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">환수정보</h4>
-                    <div class="mt-3">
-                        <div class="btn btn-primary btn-sm guardBtn">수호</div>
-                        <div class="btn btn-primary btn-sm ms-2 changeBtn">변신</div>
-                    </div>
-                    <div class="mt-3">
-                        <div
-                                id="infoDiv"
-                                class="d-flex justify-content-start gap-4"
-                                style="flex-wrap: wrap"
-                        ></div>
-                    </div>
-                    <div class="mt-3" id="countText">선택된 환수 : 0 / 30</div>
-                    <div class="mt-3">
-                        <button id="resetBtn" class="btn btn-danger">초기화</button>
-                        <button
-                                class="btn btn-success ms-2"
-                                onclick="calculateAndDisplayStats()"
-                        >
-                            계산하기
-                        </button>
+<!--    <div class="container">-->
+<!--        <div class="row mt-3">-->
+<!--            <div class="col-12">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <h4 class="card-title">공지사항</h4>-->
+<!--                        &lt;!&ndash;                    <h6 class="card-subtitle mb-10px text-muted">Card subtitle</h6>&ndash;&gt;-->
+<!--                        <p class="card-text">신규환수 제보해주시면 감사하겠습니다.</p>-->
+<!--                        <a href="javascript:;" class="card-link">오픈톡</a>-->
+<!--                        <a href="javascript:;" class="card-link">안내사항</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">환수정보</h4>
+                        <div class="mt-3">
+                            <div class="btn btn-primary guardBtn">수호</div>
+                            <div class="btn btn-primary ms-2 changeBtn">변신</div>
+                        </div>
+                        <div class="mt-3">
+                            <div
+                                    id="infoDiv"
+                                    class="d-flex justify-content-start gap-4"
+                                    style="flex-wrap: wrap"
+                            ></div>
+                        </div>
+                        <div class="mt-3" id="countText">선택된 환수 : 0 / 30</div>
+                        <div class="mt-3 text-center">
+                            <button id="resetBtn" class="btn btn-danger">초기화</button>
+                            <button
+                                    class="btn btn-success ms-2"
+                                    onclick="calculateAndDisplayStats()">
+                                계산하기
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row mt-3">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">최적 결속 결과</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <div class="alert alert-danger" role="alert">
                         <h4 class="alert-heading">2025년 4월 4일 업데이트 완료!</h4>
                         <p>
-<!--                            수호 : 청풍현 정령록, 복수의 불깨비, 혼돈의 충신,-->
-<!--                            만개분엽섬고래, 폭풍의 바람 공작, 전령사관 천신나방 25렙-->
-<!--                            장착효과 공유 부탁드립니다!-->
+                            <!--                            수호 : 청풍현 정령록, 복수의 불깨비, 혼돈의 충신,-->
+                            <!--                            만개분엽섬고래, 폭풍의 바람 공작, 전령사관 천신나방 25렙-->
+                            <!--                            장착효과 공유 부탁드립니다!-->
                         </p>
                         <hr/>
                         <p class="mb-0">
@@ -132,9 +153,56 @@
 
                     <div id="resultTable" class="table-responsive mt-5"></div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
+    <!--
+    <div class="container">
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="alert alert-danger" role="alert">
+                            <h4 class="alert-heading">2025년 4월 4일 업데이트 완료!</h4>
+                            <p>
+                                                            수호 : 청풍현 정령록, 복수의 불깨비, 혼돈의 충신,
+                                                            만개분엽섬고래, 폭풍의 바람 공작, 전령사관 천신나방 25렙
+                                                            장착효과 공유 부탁드립니다!
+                            </p>
+                            <hr/>
+                            <p class="mb-0">
+                            <p class="h4">환수 레벨 25 기준으로 최적의 조합을 찾아줍니다.</p>
+                            <p class="h4">탑승 환수는 불멸 > 전설 순으로 많이 착용하는 것이 최적</p>
+                            <p class="h4"><strong>탑승 환수 보스용 결속 냉정 6 = 치위 20% 최적</strong></p>
+                            </p>
+                        </div>
+                        <textarea
+                                id="jsonOutput"
+                                rows="6"
+                                cols="50"
+                                readonly
+                                style="display: none"
+                        ></textarea>
+                        <div class="text-center">
+                            <h4><b>최적 결속 결과</b></h4>
+                        </div>
+                        <div
+                                id="selectedPets"
+                                class="d-flex justify-content-center mt-3"
+                                style="flex-wrap: wrap"
+                        ></div>
+
+                        <div id="resultTable" class="table-responsive mt-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script
@@ -144,12 +212,12 @@
 ></script>
 <script>
     $(document).ready(function () {
-        $(".guardBtn").on('click', function(){
+        $(".guardBtn").on('click', function () {
             $("#resetBtn").trigger('click');
             guardInfo();
         });
 
-        $(".changeBtn").on('click', function(){
+        $(".changeBtn").on('click', function () {
             $("#resetBtn").trigger('click');
             changeInfo();
         });
@@ -526,12 +594,20 @@
             ["등급", stats.등급],
             [
                 "등급 세트 효과",
-                `피해저항관통 ${stats.등급세트효과.피해저항관통} 피해저항 ${stats.등급세트효과.피해저항}`,
+                `
+                ${stats.등급세트효과.피해저항관통 > 0 ? `피해저항관통 ${stats.등급세트효과.피해저항관통}` : ''}
+                ${stats.등급세트효과.피해저항 > 0 ? `피해저항 ${stats.등급세트효과.피해저항관통}` : ''}
+                ${stats.등급세트효과.대인피해 > 0 ? `대인피해 ${stats.등급세트효과.대인피해}%` : ''}
+                ${stats.등급세트효과.대인방어 > 0 ? `대인방어 ${stats.등급세트효과.대인방어}%` : ''}
+                `,
             ],
             ["세력", stats.세력],
             [
                 "세력 세트 효과",
-                `피해저항관통 ${stats.세력세트효과.피해저항관통} 피해저항 ${stats.세력세트효과.피해저항}`,
+                `
+                ${stats.세력세트효과.피해저항관통 > 0 ? `피해저항관통 ${stats.세력세트효과.피해저항관통}` : ''}
+                ${stats.세력세트효과.피해저항 > 0 ? `피해저항 ${stats.세력세트효과.피해저항}` : ''}
+                `,
             ],
         ];
 
@@ -562,6 +638,10 @@
         //     row.appendChild(valueCell);
         //     resultTable.appendChild(row);
         // });
+        // 선택된 환수가 있을 경우에만 모달 열기
+        const myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+        myModal.show();
+
     }
 
     document.getElementById("resetBtn").addEventListener("click", function () {

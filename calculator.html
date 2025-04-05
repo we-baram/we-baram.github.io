@@ -32,221 +32,237 @@
     </style>
 </head>
 <body>
-<div id="wrap">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">우리의바람</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">환수정보</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/calculator.html">환수계산기</a>
-                </li>
-            </ul>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="position: relative; height:50px;
+    max-width: 1280px;
+    margin: 0 auto;">
+        <div class="container d-flex justify-content-start">
+            <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="/">
+                <img src="https://dszw1qtcnsa5e.cloudfront.net/community/20241205/b5ba1553-e56c-4dc6-aa88-22d011bbcd9b/%EB%B0%94%EB%9E%8C%EC%97%B0%EA%B8%B0%EB%B3%B8%EC%95%84%EC%9D%B4%EC%BD%98.png"
+                     alt="Logo"  style="width:40px; height:40px;"
+                     class="d-inline-block align-text-top">
+                <span>
+                우리의바람
+                </span>
+            </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">환수정보</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/calculator.html">환수혼계산기</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <div class="row mt-3">
-        <div class="col-12 col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">환수 성장 경험치 표</h4>
-                    <div class="mt-3">
-                        <div class="btn btn-danger btn-sm growthBtn" data-unit="1">
-                            전설 환수
+<div id="wrap">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-12 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">환수 성장 경험치 표</h4>
+                        <div class="mt-3">
+                            <div class="btn btn-danger btn-sm growthBtn" data-unit="1">
+                                전설 환수
+                            </div>
+                            <div
+                                    class="btn btn-warning btn-sm ms-2 growthBtn"
+                                    data-unit="3"
+                            >
+                                불멸 환수
+                            </div>
                         </div>
-                        <div
-                                class="btn btn-warning btn-sm ms-2 growthBtn"
-                                data-unit="3"
-                        >
-                            불멸 환수
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        <div class="table-responsive">
-                            <table class="table table-bordered mb-0 growthTable">
-                                <thead>
-                                <tr>
-                                    <th>레벨</th>
-                                    <th>필요 경험치</th>
-                                    <th>레벨</th>
-                                    <th>필요 경험치</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="figureTxt" data-num="717">717</td>
-                                    <td>14</td>
-                                    <td class="figureTxt" data-num="9484">9,484</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td class="figureTxt" data-num="789">789</td>
-                                    <td>15</td>
-                                    <td class="figureTxt" data-num="10433">10,433</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td class="figureTxt" data-num="867">867</td>
-                                    <td>16</td>
-                                    <td class="figureTxt" data-num="11476">11,476</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td class="figureTxt" data-num="1302">1,302</td>
-                                    <td>17</td>
-                                    <td class="figureTxt" data-num="17214">17,214</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td class="figureTxt" data-num="1431">1,431</td>
-                                    <td>18</td>
-                                    <td class="figureTxt" data-num="18935">18,935</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td class="figureTxt" data-num="1575">1,575</td>
-                                    <td>19</td>
-                                    <td class="figureTxt" data-num="28403">28,403</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td class="figureTxt" data-num="1732">1,732</td>
-                                    <td>20</td>
-                                    <td class="figureTxt" data-num="31243">31,243</td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td class="figureTxt" data-num="1905">1,905</td>
-                                    <td>21</td>
-                                    <td class="figureTxt" data-num="31868">31,868</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td class="figureTxt" data-num="3239">3,239</td>
-                                    <td>22</td>
-                                    <td class="figureTxt" data-num="32505">32,505</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td class="figureTxt" data-num="3563">3,563</td>
-                                    <td>23</td>
-                                    <td class="figureTxt" data-num="33155">33,155</td>
-                                </tr>
-                                <tr>
-                                    <td>11</td>
-                                    <td class="figureTxt" data-num="3919">3,919</td>
-                                    <td>24</td>
-                                    <td class="figureTxt" data-num="33828">33,818</td>
-                                </tr>
-                                <tr>
-                                    <td>12</td>
-                                    <td class="figureTxt" data-num="4312">4,312</td>
-                                    <td>25</td>
-                                    <td class="figureTxt" data-num="34494">34,494</td>
-                                </tr>
-                                <tr>
-                                    <td>13</td>
-                                    <td class="figureTxt" data-num="4742">4,742</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                </tbody>
-                            </table>
+                        <div class="mt-3">
+                            <div class="table-responsive">
+                                <table class="table table-bordered mb-0 growthTable">
+                                    <thead>
+                                    <tr>
+                                        <th>레벨</th>
+                                        <th>필요 경험치</th>
+                                        <th>레벨</th>
+                                        <th>필요 경험치</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="figureTxt" data-num="717">717</td>
+                                        <td>14</td>
+                                        <td class="figureTxt" data-num="9484">9,484</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="figureTxt" data-num="789">789</td>
+                                        <td>15</td>
+                                        <td class="figureTxt" data-num="10433">10,433</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="figureTxt" data-num="867">867</td>
+                                        <td>16</td>
+                                        <td class="figureTxt" data-num="11476">11,476</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="figureTxt" data-num="1302">1,302</td>
+                                        <td>17</td>
+                                        <td class="figureTxt" data-num="17214">17,214</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="figureTxt" data-num="1431">1,431</td>
+                                        <td>18</td>
+                                        <td class="figureTxt" data-num="18935">18,935</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="figureTxt" data-num="1575">1,575</td>
+                                        <td>19</td>
+                                        <td class="figureTxt" data-num="28403">28,403</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="figureTxt" data-num="1732">1,732</td>
+                                        <td>20</td>
+                                        <td class="figureTxt" data-num="31243">31,243</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="figureTxt" data-num="1905">1,905</td>
+                                        <td>21</td>
+                                        <td class="figureTxt" data-num="31868">31,868</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="figureTxt" data-num="3239">3,239</td>
+                                        <td>22</td>
+                                        <td class="figureTxt" data-num="32505">32,505</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="figureTxt" data-num="3563">3,563</td>
+                                        <td>23</td>
+                                        <td class="figureTxt" data-num="33155">33,155</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td class="figureTxt" data-num="3919">3,919</td>
+                                        <td>24</td>
+                                        <td class="figureTxt" data-num="33828">33,818</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td class="figureTxt" data-num="4312">4,312</td>
+                                        <td>25</td>
+                                        <td class="figureTxt" data-num="34494">34,494</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td class="figureTxt" data-num="4742">4,742</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">환수혼 계산기</h4>
-                    <div class="mt-3">
-                        <form>
-                            <div class="row">
-                                <div class="col-12 selectmenu-custom">
-                                    <div class="form-floating w-100">
-                                        <select id="typeSel" class="form-control">
-                                            <option value="1" selected data-unit="1">전설</option>
-                                            <option value="2" data-unit="3">불멸</option>
-                                        </select>
-                                        <label
-                                                for="typeSel"
-                                                class="d-flex align-items-center fs-13px"
-                                        >
-                                            등급
-                                        </label>
+            <div class="col-12 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">환수혼 계산기</h4>
+                        <div class="mt-3">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 selectmenu-custom">
+                                        <div class="form-floating w-100">
+                                            <select id="typeSel" class="form-control">
+                                                <option value="1" selected data-unit="1">전설</option>
+                                                <option value="2" data-unit="3">불멸</option>
+                                            </select>
+                                            <label
+                                                    for="typeSel"
+                                                    class="d-flex align-items-center fs-13px"
+                                            >
+                                                등급
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-6">
-                                    <div class="form-floating mb-3 mb-md-0">
-                                        <input
-                                                type="number"
-                                                class="form-control fs-15px"
-                                                value="0"
-                                                id="currentLevel"
-                                                min="0"
-                                                max="24"
-                                        />
-                                        <label
-                                                for="currentLevel"
-                                                class="d-flex align-items-center fs-13px"
-                                        >
-                                            현재 레벨(0)
-                                        </label>
+                                <div class="row mt-3">
+                                    <div class="col-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <input
+                                                    type="number"
+                                                    class="form-control fs-15px"
+                                                    value="0"
+                                                    id="currentLevel"
+                                                    min="0"
+                                                    max="24"
+                                            />
+                                            <label
+                                                    for="currentLevel"
+                                                    class="d-flex align-items-center fs-13px"
+                                            >
+                                                현재 레벨(0)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <input
+                                                    type="number"
+                                                    class="form-control fs-15px"
+                                                    value="25"
+                                                    id="targetLevel"
+                                                    min="1"
+                                                    max="25"
+                                            />
+                                            <label
+                                                    for="targetLevel"
+                                                    class="d-flex align-items-center fs-13px"
+                                            >
+                                                목표 레벨(25)
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="form-floating mb-3 mb-md-0">
-                                        <input
-                                                type="number"
-                                                class="form-control fs-15px"
-                                                value="25"
-                                                id="targetLevel"
-                                                min="1"
-                                                max="25"
-                                        />
-                                        <label
-                                                for="targetLevel"
-                                                class="d-flex align-items-center fs-13px"
-                                        >
-                                            목표 레벨(25)
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="row mt-3">
-                                <h5 class="card-title">현재 보유한 환수의 혼</h5>
-                                <div class="col-4">
-                                    <div class="form-floating mb-3 mb-md-0">
-                                        <input
-                                                type="number"
-                                                class="form-control fs-15px"
-                                                id="lowerLevel"
-                                                value="0"
-                                                min="0"
-                                                max="50000"
-                                        />
-                                        <label
-                                                for="lowerLevel"
-                                                class="d-flex align-items-center fs-13px"
-                                        >
-                                            하급 혼
-                                        </label>
-                                        <img
-                                                src="/assets/img/lower_growth.jpg"
-                                                class="rounded-circle"
-                                                style="
+                                <div class="row mt-3">
+                                    <h5 class="card-title">현재 보유한 환수의 혼</h5>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <input
+                                                    type="number"
+                                                    class="form-control fs-15px"
+                                                    id="lowerLevel"
+                                                    value="0"
+                                                    min="0"
+                                                    max="50000"
+                                            />
+                                            <label
+                                                    for="lowerLevel"
+                                                    class="d-flex align-items-center fs-13px"
+                                            >
+                                                하급 혼
+                                            </label>
+                                            <img
+                                                    src="/assets/img/lower_growth.jpg"
+                                                    class="rounded-circle"
+                                                    style="
                             position: absolute;
                             right: 5px;
                             top: 50%;
@@ -257,90 +273,91 @@
                             width: 40px;
                             pointer-events: none;
                           "
-                                        />
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <input
+                                                    type="number"
+                                                    class="form-control fs-15px"
+                                                    id="middleLevel"
+                                                    value="0"
+                                                    min="0"
+                                                    max="50000"
+                                            />
+                                            <label
+                                                    for="middleLevel"
+                                                    class="d-flex align-items-center fs-13px"
+                                            >
+                                                상급 혼
+                                            </label>
+                                            <img
+                                                    src="/assets/img/middle_growth.jpg"
+                                                    class="rounded-circle"
+                                                    style="
+                            position: absolute;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            background: none;
+                            font-size: 1rem;
+                            width: 40px;
+                            pointer-events: none;
+                          "
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <input
+                                                    type="number"
+                                                    class="form-control fs-15px"
+                                                    id="upperLevel"
+                                                    value="0"
+                                                    min="0"
+                                                    max="50000"
+                                            />
+                                            <label
+                                                    for="upperLevel"
+                                                    class="d-flex align-items-center fs-13px"
+                                            >
+                                                최상급 혼
+                                            </label>
+                                            <img
+                                                    src="/assets/img/upper_growth.jpg"
+                                                    class="rounded-circle"
+                                                    style="
+                            position: absolute;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            background: none;
+                            font-size: 1rem;
+                            width: 40px;
+                            pointer-events: none;
+                          "
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="form-floating mb-3 mb-md-0">
-                                        <input
-                                                type="number"
-                                                class="form-control fs-15px"
-                                                id="middleLevel"
-                                                value="0"
-                                                min="0"
-                                                max="50000"
-                                        />
-                                        <label
-                                                for="middleLevel"
-                                                class="d-flex align-items-center fs-13px"
-                                        >
-                                            상급 혼
-                                        </label>
-                                        <img
-                                                src="/assets/img/middle_growth.jpg"
-                                                class="rounded-circle"
-                                                style="
-                            position: absolute;
-                            right: 5px;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            border: 0;
-                            background: none;
-                            font-size: 1rem;
-                            width: 40px;
-                            pointer-events: none;
-                          "
-                                        />
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="form-floating mb-3 mb-md-0">
-                                        <input
-                                                type="number"
-                                                class="form-control fs-15px"
-                                                id="upperLevel"
-                                                value="0"
-                                                min="0"
-                                                max="50000"
-                                        />
-                                        <label
-                                                for="upperLevel"
-                                                class="d-flex align-items-center fs-13px"
-                                        >
-                                            최상급 혼
-                                        </label>
-                                        <img
-                                                src="/assets/img/upper_growth.jpg"
-                                                class="rounded-circle"
-                                                style="
-                            position: absolute;
-                            right: 5px;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            border: 0;
-                            background: none;
-                            font-size: 1rem;
-                            width: 40px;
-                            pointer-events: none;
-                          "
-                                        />
-                                    </div>
+                            </form>
+                            <div class="mt-3 text-center">
+                                <div class="btn btn-block btn-success ms-2 calculateBtn">
+                                    필요 경험치 및 환수혼 계산
                                 </div>
                             </div>
-                        </form>
-                        <div class="mt-3 text-center">
-                            <div class="btn btn-block btn-success ms-2 calculateBtn">
-                                필요 경험치 및 환수혼 계산
-                            </div>
-                        </div>
-                        <div
-                                class="alert alert-secondary mt-3 resultDiv"
-                                role="alert"
-                                style="display: none"
-                        >
-                            <div class="p-2">
-                                <div id="calResultDiv"></div>
-                                <div id="resultMessage" class="mt-3"></div>
+                            <div
+                                    class="alert alert-secondary mt-3 resultDiv"
+                                    role="alert"
+                                    style="display: none"
+                            >
+                                <div class="p-2">
+                                    <div id="calResultDiv"></div>
+                                    <div id="resultMessage" class="mt-3"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -357,12 +374,12 @@
 ></script>
 <script>
     $(document).ready(function () {
-        $(".guardBtn").on('click', function(){
+        $(".guardBtn").on('click', function () {
             $("#resetBtn").trigger('click');
             guardInfo();
         });
 
-        $(".changeBtn").on('click', function(){
+        $(".changeBtn").on('click', function () {
             $("#resetBtn").trigger('click');
             changeInfo();
         });
