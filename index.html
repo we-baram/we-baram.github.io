@@ -15,20 +15,6 @@
             background-color: #767676;
             color: #fff;
         }
-
-        .item {
-            align-items: center;
-            text-align: center;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px #0003;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            width: 90px;
-        }
     </style>
 </head>
 <body>
@@ -76,20 +62,19 @@
     <!--        </div>-->
     <!--    </div>-->
     <div class="container">
-        <div class="row mt-3">
+        <div class="row my-5">
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">환수정보</h4>
-                        <div class="mt-3">
-                            <div class="btn btn-primary guardBtn">수호</div>
-                            <div class="btn btn-primary ms-2 changeBtn">변신</div>
+                        <div class="mt-4 info-selectBtn-box">
+                            <div class="btn btn-primary guardBtn active">수호</div>
+                            <div class="btn btn-primary changeBtn">변신</div>
                         </div>
-                        <div class="mt-3">
+                        <div class="item-selectBtn-box">
                             <div
                                     id="infoDiv"
-                                    class="d-flex justify-content-start gap-4"
-                                    style="flex-wrap: wrap"
+                                    class="d-flex"
                             ></div>
                         </div>
                         <div class="mt-3" id="countText">선택된 환수 : 0 / 30</div>
@@ -155,7 +140,7 @@
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">최적 결속 결과</h5>
@@ -210,11 +195,15 @@
     $(document).ready(function () {
         $(".guardBtn").on('click', function () {
             $("#resetBtn").trigger('click');
+			$(".changeBtn").removeClass("active");
+			$(this).addClass("active");
             guardInfo();
         });
 
         $(".changeBtn").on('click', function () {
             $("#resetBtn").trigger('click');
+			$(".guardBtn").removeClass("active");
+			$(this).addClass("active");
             changeInfo();
         });
 
@@ -234,7 +223,7 @@
                         <div class="item">
                           <input type="checkbox" class="check_item" id="check-${i}" value="${i}">
                           <label for="check-${i}">
-                            <img src="${data[i].iconPath}" alt="${data[i].name}" style="width:70px; height:70px;">
+                            <img src="${data[i].iconPath}" alt="${data[i].name}" style="width:50px; height:50px;">
                             <div>
                             ${data[i].name}
                             </div>
@@ -258,7 +247,7 @@
                         <div class="item">
                           <input type="checkbox" class="check_item" id="check-${i}" value="${i}">
                           <label for="check-${i}">
-                            <img src="${data[i].iconPath}" alt="${data[i].name}" style="width:70px; height:70px;">
+                            <img src="${data[i].iconPath}" alt="${data[i].name}" style="width:50px; height:50px;">
                             <div>
                             ${data[i].name}
                             </div>
@@ -563,7 +552,7 @@
             .map(
                 (pet) =>
                     `<div class="item">
-                    <img src="${pet.iconPath}" alt="${pet.name}" style="width:70px; height:70px;">
+                    <img src="${pet.iconPath}" alt="${pet.name}" style="width:60px; height:60px;">
                     <span>${pet.name}</span>
                 </div>`
             )
