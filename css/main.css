@@ -230,21 +230,20 @@ table thead th {
 }
 
 /* select 박스 화살표 해결 */
-.form-control {
-}
-.form-control::-ms-expand {
+/* .form-control::-ms-expand {
   display: inline;
 }
 .form-control {
   -webkit-appearance: menulist;
   -moz-appearance: menulist;
+} */
+.rounded-circle {
+  margin-right: 12px;
 }
-/* select::-ms-expand { display: none; }
-select { -webkit-appearance: none; } */
 
 /* 상단 출처 css */
 #wrap .container:has(.source-cont) {
-  gap: 12px;
+  gap: 4px;
 }
 .notice-txt {
   flex: 1 auto;
