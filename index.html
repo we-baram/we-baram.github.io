@@ -319,7 +319,7 @@
             $(this).addClass("active");
             guardInfo();
 
-            $("#multi").click();
+            $('input[id="multi"]').prop('checked',true);
         });
 
         $(".changeBtn").on("click", function () {
@@ -327,8 +327,8 @@
             $(".guardBtn").removeClass("active");
             $(this).addClass("active");
             changeInfo();
-            
-            $("#multi").click();
+
+            $('input[id="multi"]').prop('checked',true);
         });
 
         let itemData = [];
