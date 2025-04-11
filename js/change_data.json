@@ -853,6 +853,18 @@
     "iconPath": "/assets/icon/change/71.png"
   },
   {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "냉정",
+    "name": "광속 유희수모",
+    "ic": 72,
+    "피해저항": 0,
+    "피해저항관통": 132,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/72.png"
+  },
+  {
     "grade": "불멸",
     "type": "변신",
     "influence": "결의",

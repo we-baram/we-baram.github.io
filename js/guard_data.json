@@ -888,6 +888,18 @@
     "iconPath": "/assets/icon/guard/74.jpg"
   },
   {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "냉정",
+    "name": "광속 번쩍 해파리",
+    "ic": 75,
+    "피해저항": 0,
+    "피해저항관통": 48,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/75.jpg"
+  },
+  {
     "grade": "불멸",
     "type": "수호",
     "influence": "결의",
