@@ -288,11 +288,13 @@
 <script>
     $(document).ready(function () {
 
+        var selectedType;
+
         $("input[name='selectMode']").on("change", function () {
 
             $("#resetBtn").trigger('click');
 
-            var selectedType = $(this).attr("id") === "single" ? "radio" : "checkbox";
+            selectedType = $(this).attr("id") === "single" ? "radio" : "checkbox";
 
             $(".item > input").prop('type', selectedType);
 
@@ -316,6 +318,8 @@
             $(".changeBtn").removeClass("active");
             $(this).addClass("active");
             guardInfo();
+
+            $("#multi").click();
         });
 
         $(".changeBtn").on("click", function () {
@@ -323,6 +327,8 @@
             $(".guardBtn").removeClass("active");
             $(this).addClass("active");
             changeInfo();
+            
+            $("#multi").click();
         });
 
         let itemData = [];
