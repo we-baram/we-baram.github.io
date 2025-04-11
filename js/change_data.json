@@ -781,63 +781,135 @@
     "iconPath": "/assets/icon/change/65.png"
   },
   {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "의지",
+    "name": "의지의 변신",
+    "ic": 66,
+    "피해저항": 62,
+    "피해저항관통": 112,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/66.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "결의",
+    "name": "결의의 변신",
+    "ic": 67,
+    "피해저항": 25,
+    "피해저항관통": 150,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/67.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "냉정",
+    "name": "냉정의 변신",
+    "ic": 68,
+    "피해저항": 130,
+    "피해저항관통": 45,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/68.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "활력",
+    "name": "활력의 변신",
+    "ic": 69,
+    "피해저항": 150,
+    "피해저항관통": 25,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/69.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "고요",
+    "name": "고요의 변신",
+    "ic": 70,
+    "피해저항": 45,
+    "피해저항관통": 130,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/70.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "침착",
+    "name": "침착의 변신",
+    "ic": 71,
+    "피해저항": 112,
+    "피해저항관통": 62,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/71.png"
+  },
+  {
     "grade": "불멸",
     "type": "변신",
     "influence": "결의",
     "name": "멸 화저폭군",
-    "ic": 66,
+    "ic": 200,
     "피해저항": 136,
     "피해저항관통": 136,
     "대인피해%": 7,
     "대인방어%": 7,
-    "iconPath": "/assets/icon/change/66.png"
+    "iconPath": "/assets/icon/change/200.png"
   },
   {
     "grade": "불멸",
     "type": "변신",
     "influence": "고요",
     "name": "멸 마룡명신",
-    "ic": 67,
+    "ic": 201,
     "피해저항": 106,
     "피해저항관통": 221,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/change/67.png"
+    "iconPath": "/assets/icon/change/201.png"
   },
   {
     "grade": "불멸",
     "type": "변신",
     "influence": "결의",
     "name": "멸 신양현성",
-    "ic": 68,
+    "ic": 202,
     "피해저항": 221,
     "피해저항관통": 106,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/change/68.png"
+    "iconPath": "/assets/icon/change/202.png"
   },
   {
     "grade": "불멸",
     "type": "변신",
     "influence": "침착",
     "name": "멸 풍신지마",
-    "ic": 69,
+    "ic": 203,
     "피해저항": 124,
     "피해저항관통": 124,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/change/69.png"
+    "iconPath": "/assets/icon/change/203.png"
   },
   {
     "grade": "불멸",
     "type": "변신",
     "influence": "의지",
     "name": "멸 설화백영",
-    "ic": 70,
+    "ic": 204,
     "피해저항": 226,
     "피해저항관통": 41,
     "대인피해%": 0,
     "대인방어%": 16,
-    "iconPath": "/assets/icon/change/70.png"
+    "iconPath": "/assets/icon/change/204.png"
   }
 ]

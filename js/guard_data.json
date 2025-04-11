@@ -763,7 +763,7 @@
     "ic": 64,
     "피해저항": 62,
     "피해저항관통": 0,
-    "대인피해%": 0,
+    "대인피해%": 6,
     "대인방어%": 0,
     "iconPath": "/assets/icon/guard/64.jpg"
   },
@@ -816,63 +816,135 @@
     "iconPath": "/assets/icon/guard/68.jpg"
   },
   {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "의지",
+    "name": "의지의 수호",
+    "ic": 69,
+    "피해저항": 17,
+    "피해저항관통": 32,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/69.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "결의",
+    "name": "결의의 수호",
+    "ic": 70,
+    "피해저항": 7,
+    "피해저항관통": 42,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/70.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "냉정",
+    "name": "냉정의 수호",
+    "ic": 71,
+    "피해저항": 37,
+    "피해저항관통": 12,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/71.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "활력",
+    "name": "활력의 수호",
+    "ic": 72,
+    "피해저항": 42,
+    "피해저항관통": 7,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/72.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "고요",
+    "name": "고요의 수호",
+    "ic": 73,
+    "피해저항": 12,
+    "피해저항관통": 37,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/73.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "침착",
+    "name": "침착의 수호",
+    "ic": 74,
+    "피해저항": 32,
+    "피해저항관통": 17,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/74.jpg"
+  },
+  {
     "grade": "불멸",
     "type": "수호",
     "influence": "결의",
     "name": "화운 금돼지",
-    "ic": 69,
+    "ic": 200,
     "피해저항": 58,
     "피해저항관통": 58,
     "대인피해%": 7,
     "대인방어%": 7,
-    "iconPath": "/assets/icon/guard/69.jpg"
+    "iconPath": "/assets/icon/guard/200.jpg"
   },
   {
     "grade": "불멸",
     "type": "수호",
     "influence": "고요",
     "name": "여의주 흑룡",
-    "ic": 70,
+    "ic": 201,
     "피해저항": 59,
     "피해저항관통": 124,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/70.jpg"
+    "iconPath": "/assets/icon/guard/201.jpg"
   },
   {
     "grade": "불멸",
     "type": "수호",
     "influence": "결의",
     "name": "성운 백양",
-    "ic": 71,
+    "ic": 202,
     "피해저항": 124,
     "피해저항관통": 59,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/71.jpg"
+    "iconPath": "/assets/icon/guard/202.jpg"
   },
   {
     "grade": "불멸",
     "type": "수호",
     "influence": "침착",
     "name": "유성 일각수",
-    "ic": 72,
+    "ic": 203,
     "피해저항": 49,
     "피해저항관통": 49,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/72.jpg"
+    "iconPath": "/assets/icon/guard/203.jpg"
   },
   {
     "grade": "불멸",
     "type": "수호",
     "influence": "의지",
     "name": "화린 금사",
-    "ic": 73,
+    "ic": 204,
     "피해저항": 86,
     "피해저항관통": 21,
     "대인피해%": 0,
     "대인방어%": 16,
-    "iconPath": "/assets/icon/guard/73.jpg"
+    "iconPath": "/assets/icon/guard/204.jpg"
   }
 ]
