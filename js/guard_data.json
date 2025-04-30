@@ -958,5 +958,17 @@
     "대인피해%": 0,
     "대인방어%": 16,
     "iconPath": "/assets/icon/guard/204.jpg"
+  },
+  {
+    "grade": "불멸",
+    "type": "수호",
+    "influence": "결의",
+    "name": "신령 천운장",
+    "ic": 205,
+    "피해저항": 19,
+    "피해저항관통": 94,
+    "대인피해%": 16,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/205.png"
   }
 ]
