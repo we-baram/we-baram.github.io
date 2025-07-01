@@ -899,6 +899,80 @@
     "대인방어%": 0,
     "iconPath": "/assets/icon/guard/75.jpg"
   },
+
+
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "결의",
+    "name": "의협웅장",
+    "ic": 76,
+    "피해저항": 0,
+    "피해저항관통": 62,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/76.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "결의",
+    "name": "녹자청염 망령사슴",
+    "ic": 77,
+    "피해저항": 62,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/77.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "의지",
+    "name": "탈마",
+    "ic": 78,
+    "피해저항": 65,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 6,
+    "iconPath": "/assets/icon/guard/78.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "의지",
+    "name": "황건자객 녹안토끼",
+    "ic": 79,
+    "피해저항": 0,
+    "피해저항관통": 65,
+    "대인피해%": 6,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/79.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "침착",
+    "name": "극치",
+    "ic": 80,
+    "피해저항": 0,
+    "피해저항관통": 154,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/80.jpg"
+  },
+  {
+    "grade": "전설",
+    "type": "수호",
+    "influence": "침착",
+    "name": "진혼등롱 미호누이",
+    "ic": 81,
+    "피해저항": 154,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/guard/81.jpg"
+  },
   {
     "grade": "불멸",
     "type": "수호",
