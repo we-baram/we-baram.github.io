@@ -865,6 +865,78 @@
     "iconPath": "/assets/icon/change/72.png"
   },
   {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "결의",
+    "name": "극진 진산지웅",
+    "ic": 73,
+    "피해저항": 0,
+    "피해저항관통": 210,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/73.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "결의",
+    "name": "극진 청흑오요",
+    "ic": 74,
+    "피해저항": 210,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/74.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "의지",
+    "name": "극진 주혼귀사",
+    "ic": 75,
+    "피해저항": 217,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 6,
+    "iconPath": "/assets/icon/change/75.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "의지",
+    "name": "극진 수인황묘",
+    "ic": 76,
+    "피해저항": 0,
+    "피해저항관통": 217,
+    "대인피해%": 6,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/76.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "침착",
+    "name": "극진 야형귀조",
+    "ic": 77,
+    "피해저항": 0,
+    "피해저항관통": 154,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/77.png"
+  },
+  {
+    "grade": "전설",
+    "type": "변신",
+    "influence": "의지",
+    "name": "극진 청염미호",
+    "ic": 78,
+    "피해저항": 154,
+    "피해저항관통": 0,
+    "대인피해%": 0,
+    "대인방어%": 0,
+    "iconPath": "/assets/icon/change/78.png"
+  },
+  {
     "grade": "불멸",
     "type": "변신",
     "influence": "결의",
