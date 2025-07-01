@@ -899,8 +899,6 @@
     "대인방어%": 0,
     "iconPath": "/assets/icon/guard/75.jpg"
   },
-
-
   {
     "grade": "전설",
     "type": "수호",
@@ -911,7 +909,7 @@
     "피해저항관통": 62,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/76.jpg"
+    "iconPath": "/assets/icon/guard/76.png"
   },
   {
     "grade": "전설",
@@ -923,7 +921,7 @@
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/77.jpg"
+    "iconPath": "/assets/icon/guard/77.png"
   },
   {
     "grade": "전설",
@@ -935,7 +933,7 @@
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 6,
-    "iconPath": "/assets/icon/guard/78.jpg"
+    "iconPath": "/assets/icon/guard/78.png"
   },
   {
     "grade": "전설",
@@ -947,7 +945,7 @@
     "피해저항관통": 65,
     "대인피해%": 6,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/79.jpg"
+    "iconPath": "/assets/icon/guard/79.png"
   },
   {
     "grade": "전설",
@@ -959,7 +957,7 @@
     "피해저항관통": 154,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/80.jpg"
+    "iconPath": "/assets/icon/guard/80.png"
   },
   {
     "grade": "전설",
@@ -971,7 +969,7 @@
     "피해저항관통": 0,
     "대인피해%": 0,
     "대인방어%": 0,
-    "iconPath": "/assets/icon/guard/81.jpg"
+    "iconPath": "/assets/icon/guard/81.png"
   },
   {
     "grade": "불멸",
